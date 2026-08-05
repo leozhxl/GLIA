@@ -1,5 +1,5 @@
 import { CalendarHeart, MessageCircle } from 'lucide-react';
-import { whatsappLink } from '@/lib/supabase';
+import { whatsappLink } from '@/lib/constants';
 
 const HERO_IMAGE = '/clinica-recepcao.jpg';
 

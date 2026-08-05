@@ -1,6 +1,6 @@
 import { Instagram, Mail, Phone, MapPin, Clock } from 'lucide-react';
 import { Logo } from './Logo';
-import { whatsappLink } from '@/lib/supabase';
+import { whatsappLink } from '@/lib/constants';
 import { SPECIALTIES } from '@/data/specialties';
 
 export function Footer() {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { MessageCircle, X } from 'lucide-react';
-import { whatsappLink } from '@/lib/supabase';
+import { whatsappLink } from '@/lib/constants';
 
 export function WhatsAppButton() {
   const [visible, setVisible] = useState(false);

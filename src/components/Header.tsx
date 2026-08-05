@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Menu, X, CalendarHeart, MessageCircle, MapPin, Clock } from 'lucide-react';
 import { Logo } from './Logo';
-import { whatsappLink } from '@/lib/supabase';
+import { whatsappLink } from '@/lib/constants';
 
 const NAV_LINKS = [
   { label: 'Início', href: '#top' },

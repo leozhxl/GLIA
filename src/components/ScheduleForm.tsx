@@ -8,7 +8,7 @@ import {
   Clock,
   Mail,
 } from 'lucide-react';
-import { whatsappLink } from '@/lib/supabase';
+import { whatsappLink } from '@/lib/constants';
 import { SPECIALTIES } from '@/data/specialties';
 
 type Status = 'idle' | 'success';
