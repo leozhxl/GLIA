@@ -12,14 +12,11 @@ export function Specialties() {
     <section id="especialidades" className="section-anchor-offset bg-coral-100/70 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-sm font-bold uppercase tracking-wider text-coral-500">
-            Especialidades
-          </span>
-          <h2 className="mt-3 text-balance text-3xl font-extrabold text-glia-900 sm:text-4xl">
+          <h2 className="text-balance text-3xl font-extrabold text-glia-900 sm:text-4xl">
             Tudo o que seu filho precisa, numa só equipe
           </h2>
           <p className="mt-4 text-pretty text-lg text-glia-800/70">
-            Seis especialidades que se completam. Cada uma com seu foco —
+            Seis especialistas que se completam. Cada uma com seu foco —
             e todas conectadas pelo mesmo plano terapêutico.
           </p>
           <p className="mt-3 font-display text-base italic text-coral-600">
@@ -62,9 +59,9 @@ export function Specialties() {
         </div>
 
         <p className="mx-auto mt-12 max-w-2xl text-center text-pretty text-base text-glia-800/60">
-          Não tem certeza de qual especialidade seu filho precisa? Na avaliação
-          inicial, nossa equipe identifica o melhor ponto de partida — você não
-          precisa decidir isso sozinho.
+          Não tem certeza de qual especialidade seu filho precisa? No
+          Diagnóstico Funcional, nossa equipe identifica o melhor ponto de
+          partida — você não precisa decidir isso sozinho.
         </p>
       </div>
     </section>

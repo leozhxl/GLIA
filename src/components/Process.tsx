@@ -8,7 +8,7 @@ const STEPS = [
   },
   {
     icon: FileText,
-    title: 'Avaliação da criança',
+    title: 'Diagnóstico Funcional da criança',
     text: 'Realizamos uma avaliação multidisciplinar utilizando protocolos específicos conforme a necessidade de cada criança.',
   },
   {
@@ -19,7 +19,7 @@ const STEPS = [
   {
     icon: TrendingUp,
     title: 'Devolutiva completa',
-    text: 'Os pais recebem uma apresentação detalhada dos resultados, além de um plano terapêutico personalizado com metas e orientações práticas para casa e escola.',
+    text: 'Os pais recebem um Diagnóstico Funcional detalhado dos resultados, além de um Plano Terapêutico Personalizado com metas e orientações práticas para casa e escola.',
   },
 ];
 
@@ -93,7 +93,7 @@ export function Process() {
 
         <div className="mx-auto mt-16 max-w-3xl rounded-3xl bg-white/80 p-8 shadow-sm ring-1 ring-white backdrop-blur-sm sm:p-10">
           <h3 className="text-center font-display text-xl font-bold text-glia-900 sm:text-2xl">
-            O que você recebe ao final da avaliação
+            O que você recebe no Diagnóstico Funcional
           </h3>
           <ul className="mt-6 grid gap-x-8 gap-y-2 text-sm text-glia-800/80 sm:grid-cols-2">
             {WHAT_YOU_RECEIVE.map((item) => (

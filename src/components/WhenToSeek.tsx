@@ -15,15 +15,9 @@ export function WhenToSeek() {
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-sm font-bold uppercase tracking-wider text-coral-600">
-            Sinais de atenção
-          </span>
-          <h2 className="mt-3 text-balance font-display text-3xl font-extrabold text-glia-900 sm:text-4xl">
+          <h2 className="text-balance font-display text-3xl font-extrabold text-glia-900 sm:text-4xl">
             Quando procurar a Glia?
           </h2>
-          <p className="mt-3 font-display text-base italic text-coral-600">
-            Mais do que um diagnóstico, entregamos um caminho claro para o desenvolvimento.
-          </p>
         </div>
 
         <div className="mt-14 grid items-center gap-14 lg:grid-cols-2">
@@ -68,6 +62,10 @@ export function WhenToSeek() {
                 </div>
               ))}
             </div>
+
+            <p className="mt-6 font-display text-base italic text-coral-600">
+              Mais do que um diagnóstico, entregamos um caminho claro para o desenvolvimento.
+            </p>
 
             <a
               href="#agendar"

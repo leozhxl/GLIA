@@ -47,24 +47,16 @@ export function ValueProp() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-sm font-bold uppercase tracking-wider text-sun-300">
-            Por que escolher a GLIA?
-          </span>
-          <h2 className="mt-3 text-balance font-display text-3xl font-extrabold sm:text-4xl">
+          <h2 className="text-balance font-display text-3xl font-extrabold sm:text-4xl">
             Aqui, seu filho é cuidado de forma integrada
           </h2>
           <p className="mt-4 text-pretty text-lg text-coral-50/70">
-            Inspirada nas células glia — que sustentam e conectam o sistema
-            nervoso —, a GLIA reúne especialistas que pensam juntos o
-            desenvolvimento do seu filho.
+            Reunimos especialistas que pensam juntos o desenvolvimento do seu filho.
           </p>
         </div>
 
         <div className="mx-auto mt-14 max-w-3xl rounded-3xl border border-sun-300/30 bg-white/[0.04] p-8 text-center sm:p-10">
-          <span className="text-sm font-bold uppercase tracking-wider text-sun-300">
-            Nossa missão
-          </span>
-          <h3 className="mt-2 text-balance font-display text-xl font-bold sm:text-2xl">
+          <h3 className="text-balance font-display text-xl font-bold sm:text-2xl">
             Reorganizar a vida da família por meio da comunicação da criança.
           </h3>
           <p className="mt-4 text-pretty text-base leading-relaxed text-coral-50/70">
@@ -76,17 +68,14 @@ export function ValueProp() {
         </div>
 
         <div className="mx-auto mt-14 max-w-4xl rounded-3xl bg-white/[0.06] p-8 ring-1 ring-white/10 backdrop-blur-sm sm:p-10">
-          <span className="text-sm font-bold uppercase tracking-wider text-sun-300">
-            Nosso diferencial
-          </span>
-          <h3 className="mt-2 text-balance font-display text-2xl font-extrabold sm:text-3xl">
-            Muito além de uma avaliação
+          <h3 className="text-balance font-display text-2xl font-extrabold sm:text-3xl">
+            Muito além de um Diagnóstico
           </h3>
           <p className="mt-4 text-pretty text-base leading-relaxed text-coral-50/70 sm:text-lg">
-            Enquanto muitas clínicas realizam avaliações separadas por
-            especialidade, a GLIA integra todas as informações em um único
-            plano terapêutico, considerando a criança como um todo e
-            envolvendo família, escola e equipe clínica.
+            Enquanto muitas clínicas realizam avaliações e diagnósticos
+            separados por especialidade, a GLIA integra todas as informações
+            em um único plano terapêutico, considerando a criança como um
+            todo e envolvendo família, escola e equipe clínica.
           </p>
           <p className="mt-6 text-sm font-bold uppercase tracking-wider text-sun-300">
             Analisamos aspectos como
