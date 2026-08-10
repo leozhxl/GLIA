@@ -25,12 +25,12 @@ export const FAQS: FaqItem[] = [
     answer: 'É um processo estruturado em quatro encontros que permite compreender a criança de forma global, envolvendo comunicação, comportamento, desenvolvimento, autonomia, rotina familiar e participação escolar. Ao final, a família recebe um plano terapêutico personalizado.',
   },
   {
-    question: 'Quanto tempo dura a avaliação?',
-    answer: 'A Avaliação Funcional Integrada acontece em quatro encontros, incluindo entrevista com os pais, avaliação da criança, reunião interdisciplinar da equipe e devolutiva completa para a família.',
+    question: 'Quanto tempo dura o Diagnóstico Funcional?',
+    answer: 'O Diagnóstico Funcional acontece em quatro encontros, incluindo entrevista com os pais, avaliação da criança, reunião interdisciplinar da equipe e devolutiva completa para a família.',
   },
   {
-    question: 'O que a família recebe ao final da avaliação?',
-    answer: 'A família recebe um material completo contendo: perfil funcional da criança, pontos fortes e potencialidades, principais dificuldades, gráficos de desenvolvimento, plano terapêutico individualizado, metas para 3, 6 e 12 meses, orientações para casa e escola, e encaminhamentos quando necessários.',
+    question: 'O que a família recebe ao final do Diagnóstico?',
+    answer: 'A família recebe um Diagnóstico Funcional completo com: perfil funcional da criança, pontos fortes e potencialidades, principais dificuldades, gráficos de desenvolvimento, Plano Terapêutico Individualizado, metas para 3, 6 e 12 meses, orientações para casa e escola, e encaminhamentos quando necessários.',
   },
   {
     question: 'Quais profissionais atendem na GLIA?',
