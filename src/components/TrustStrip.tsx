@@ -2,7 +2,7 @@ import { GraduationCap, MapPin, HeartHandshake } from 'lucide-react';
 
 const STATS = [
   { icon: HeartHandshake, value: '+1000', label: 'atendimentos realizados' },
-  { icon: GraduationCap, value: '6 especialidades', label: 'sob o mesmo teto' },
+  { icon: GraduationCap, value: '0 a 15 anos', label: 'faixa etária atendida' },
   { icon: MapPin, value: 'Sombrio', label: 'Santa Catarina' },
 ];
 

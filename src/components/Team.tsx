@@ -33,6 +33,9 @@ export function Team() {
             Especialistas com experiência e registro ativo, que se tratam entre
             si como parte da mesma equipe — não como colegas de corredor.
           </p>
+          <p className="mt-3 font-display text-base italic text-sun-200">
+            Avaliamos além dos sintomas para compreender o funcionamento global da criança.
+          </p>
         </div>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -63,8 +66,11 @@ export function Team() {
                   <h3 className="mt-3 text-xl font-bold text-white">
                     {member.name}
                   </h3>
-                  <p className="mt-1 text-sm leading-relaxed text-coral-50/70">
+                  <p className="mt-1 text-sm font-semibold leading-relaxed text-sun-100/90">
                     {member.credential}
+                  </p>
+                  <p className="mt-2 text-xs leading-relaxed text-coral-50/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    {member.bio}
                   </p>
                 </div>
               </div>

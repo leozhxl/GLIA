@@ -54,7 +54,7 @@ export function Header() {
       {/* Main nav row */}
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:h-24 sm:px-6 lg:px-8">
         <a href="#top" aria-label="GLIA - início" className="shrink-0">
-          <Logo tagline="Terapia Multidisciplinar Infantil" />
+          <Logo tagline="Centro Integrado de Desenvolvimento Infantil" />
         </a>
 
         {/* Desktop nav */}

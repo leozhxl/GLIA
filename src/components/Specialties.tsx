@@ -19,8 +19,11 @@ export function Specialties() {
             Tudo o que seu filho precisa, numa só equipe
           </h2>
           <p className="mt-4 text-pretty text-lg text-glia-800/70">
-            Oito especialidades que se completam. Cada uma com seu foco —
+            Seis especialidades que se completam. Cada uma com seu foco —
             e todas conectadas pelo mesmo plano terapêutico.
+          </p>
+          <p className="mt-3 font-display text-base italic text-coral-600">
+            Integramos conhecimento, profissionais e família para gerar resultados reais.
           </p>
         </div>
 

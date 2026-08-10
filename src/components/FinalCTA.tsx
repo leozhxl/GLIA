@@ -25,6 +25,9 @@ export function FinalCTA() {
           <h2 className="mt-5 text-balance text-3xl font-extrabold leading-[1.15] sm:text-4xl lg:text-5xl">
             Agende hoje a avaliação do seu filho
           </h2>
+          <p className="mt-4 font-display text-lg italic text-sun-200">
+            Cuidamos da criança. Transformamos a rotina da família.
+          </p>
           <p className="mt-5 text-pretty text-lg leading-relaxed text-coral-50/75">
             Cada mês que passa é tempo de desenvolvimento que não volta. Quanto
             antes o cuidado começa, maior a janela de evolução. Dê o primeiro

@@ -1,31 +1,43 @@
 import { Users, MessagesSquare, ClipboardList, Baby, type LucideIcon } from 'lucide-react';
 
+const ASPECTS = [
+  'Comunicação',
+  'Comportamento',
+  'Desenvolvimento',
+  'Alimentação',
+  'Processamento sensorial',
+  'Rotina familiar',
+  'Vida escolar',
+  'Participação social',
+  'Autonomia',
+];
+
 const VALUES: { icon: LucideIcon; title: string; text: string }[] = [
   {
     icon: Users,
-    title: 'Equipe que conversa entre si',
-    text: 'Nossos especialistas se reúnem em discussões de caso. Cada um sabe o que o outro está trabalhando — o cuidado nunca fica em ilhas.',
+    title: 'Avaliação interdisciplinar integrada',
+    text: 'Nossos especialistas se reúnem em discussões de caso e compartilham o mesmo raciocínio clínico — o cuidado nunca fica em ilhas.',
   },
   {
     icon: ClipboardList,
-    title: 'Plano terapêutico único',
-    text: 'Um plano integrado, construído em conjunto e revisado pela equipe. Seu filho não é uma soma de tratamentos soltos, é um todo.',
+    title: 'Plano terapêutico único e personalizado',
+    text: 'Em vez de pareceres separados por especialidade, construímos um único plano funcional, com metas claras e prioridades definidas.',
   },
   {
     icon: MessagesSquare,
-    title: 'Família sempre acompanhada',
-    text: 'Acompanhamos a evolução junto com você. Devolutivas claras, sem jargão, para que você entenda cada passo e participe do processo.',
+    title: 'Comunicação constante',
+    text: 'Entre profissionais, família e escola — com metas claras e acompanhamento baseado em resultados para toda a família.',
   },
   {
     icon: Baby,
-    title: 'Ambiente pensado para crianças',
-    text: 'Espaço acolhedor, lúdico e seguro, onde seu filho se sente à vontade. Muitos chegam perguntando quando vão voltar.',
+    title: 'Necessidades reais da criança',
+    text: 'Atendimento centrado no que realmente impacta o desenvolvimento, com equipe especializada em desenvolvimento infantil.',
   },
 ];
 
 export function ValueProp() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-coral-900 via-coral-800 to-coral-900 py-20 text-white sm:py-28">
+    <section id="sobre" className="section-anchor-offset relative overflow-hidden bg-gradient-to-br from-coral-900 via-coral-800 to-coral-900 py-20 text-white sm:py-28">
       <div className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-sun-600 via-sun-300 to-sun-600" />
       {/* Decorative glow shapes */}
       <div className="pointer-events-none absolute inset-0">
@@ -36,7 +48,7 @@ export function ValueProp() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-sm font-bold uppercase tracking-wider text-sun-300">
-            Por que a GLIA é diferente
+            Por que escolher a GLIA?
           </span>
           <h2 className="mt-3 text-balance font-display text-3xl font-extrabold sm:text-4xl">
             Aqui, seu filho é cuidado de forma integrada
@@ -46,6 +58,47 @@ export function ValueProp() {
             nervoso —, a GLIA reúne especialistas que pensam juntos o
             desenvolvimento do seu filho.
           </p>
+        </div>
+
+        <div className="mx-auto mt-14 max-w-3xl rounded-3xl border border-sun-300/30 bg-white/[0.04] p-8 text-center sm:p-10">
+          <span className="text-sm font-bold uppercase tracking-wider text-sun-300">
+            Nossa missão
+          </span>
+          <h3 className="mt-2 text-balance font-display text-xl font-bold sm:text-2xl">
+            Reorganizar a vida da família por meio da comunicação da criança.
+          </h3>
+          <p className="mt-4 text-pretty text-base leading-relaxed text-coral-50/70">
+            Acreditamos que desenvolver habilidades de comunicação e
+            funcionalidade transforma a participação da criança em casa, na
+            escola e na comunidade, promovendo mais autonomia e qualidade de
+            vida para toda a família.
+          </p>
+        </div>
+
+        <div className="mx-auto mt-14 max-w-4xl rounded-3xl bg-white/[0.06] p-8 ring-1 ring-white/10 backdrop-blur-sm sm:p-10">
+          <span className="text-sm font-bold uppercase tracking-wider text-sun-300">
+            Nosso diferencial
+          </span>
+          <h3 className="mt-2 text-balance font-display text-2xl font-extrabold sm:text-3xl">
+            Muito além de uma avaliação
+          </h3>
+          <p className="mt-4 text-pretty text-base leading-relaxed text-coral-50/70 sm:text-lg">
+            Enquanto muitas clínicas realizam avaliações separadas por
+            especialidade, a GLIA integra todas as informações em um único
+            plano terapêutico, considerando a criança como um todo e
+            envolvendo família, escola e equipe clínica.
+          </p>
+          <p className="mt-6 text-sm font-bold uppercase tracking-wider text-sun-300">
+            Analisamos aspectos como
+          </p>
+          <ul className="mt-4 grid gap-x-6 gap-y-2 text-sm text-coral-50/80 sm:grid-cols-3">
+            {ASPECTS.map((aspect) => (
+              <li key={aspect} className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-sun-300" />
+                {aspect}
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

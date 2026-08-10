@@ -3,24 +3,36 @@ import { Search, FileText, Users, TrendingUp } from 'lucide-react';
 const STEPS = [
   {
     icon: Search,
-    title: 'Avaliação inicial',
-    text: 'Encontro acolhedor com o especialista da área de interesse (ou com nossa pediatra coordenadora) para entender o momento do desenvolvimento do seu filho.',
+    title: 'Entrevista com os pais',
+    text: 'Conversa detalhada para compreender a história do desenvolvimento, rotina familiar, comportamento, comunicação, alimentação, sono e principais dificuldades da criança.',
   },
   {
     icon: FileText,
-    title: 'Plano terapêutico personalizado',
-    text: 'A equipe discute o caso em conjunto e constrói um plano integrado, com metas claras e combinação de especialidades — sempre explicado para você.',
+    title: 'Avaliação da criança',
+    text: 'Realizamos uma avaliação multidisciplinar utilizando protocolos específicos conforme a necessidade de cada criança.',
   },
   {
     icon: Users,
-    title: 'Acompanhamento multidisciplinar',
-    text: 'As sessões acontecem no mesmo lugar, com profissionais que se comunicam. O avanço de uma área alimenta o trabalho da outra.',
+    title: 'Integração das informações',
+    text: 'Nossa equipe reúne todas as observações para construir um único plano funcional, identificando prioridades e necessidades de encaminhamentos quando necessário.',
   },
   {
     icon: TrendingUp,
-    title: 'Evolução acompanhada com a família',
-    text: 'Encontros periódicos de devolutiva, em que mostramos a evolução, ajustamos metas e respondemos às suas dúvidas — sem jargão, com presença.',
+    title: 'Devolutiva completa',
+    text: 'Os pais recebem uma apresentação detalhada dos resultados, além de um plano terapêutico personalizado com metas e orientações práticas para casa e escola.',
   },
+];
+
+const WHAT_YOU_RECEIVE = [
+  'Perfil funcional da criança',
+  'Pontos fortes e potencialidades',
+  'Barreiras ao desenvolvimento',
+  'Gráficos de desempenho',
+  'Plano terapêutico individualizado',
+  'Metas para 3, 6 e 12 meses',
+  'Orientações para casa',
+  'Orientações para escola',
+  'Encaminhamentos quando necessários',
 ];
 
 export function Process() {
@@ -35,14 +47,16 @@ export function Process() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-sm font-bold uppercase tracking-wider text-coral-600">
-            Como funciona
+            Método GLIA® · Avaliação Funcional Integrada
           </span>
           <h2 className="mt-3 text-balance font-display text-3xl font-extrabold text-glia-900 sm:text-4xl">
-            Um caminho claro, do primeiro encontro à evolução
+            Como funciona
           </h2>
           <p className="mt-4 text-pretty text-lg text-glia-800/70">
-            Você nunca fica sem saber o que está acontecendo. Cada etapa é
-            explicada, acompanhada e ajustada junto com a família.
+            Nosso método exclusivo identifica as reais necessidades da criança
+            e organiza um plano de intervenção baseado em prioridades
+            funcionais, promovendo resultados mais eficientes e significativos
+            para toda a família.
           </p>
         </div>
 
@@ -75,6 +89,20 @@ export function Process() {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="mx-auto mt-16 max-w-3xl rounded-3xl bg-white/80 p-8 shadow-sm ring-1 ring-white backdrop-blur-sm sm:p-10">
+          <h3 className="text-center font-display text-xl font-bold text-glia-900 sm:text-2xl">
+            O que você recebe ao final da avaliação
+          </h3>
+          <ul className="mt-6 grid gap-x-8 gap-y-2 text-sm text-glia-800/80 sm:grid-cols-2">
+            {WHAT_YOU_RECEIVE.map((item) => (
+              <li key={item} className="flex items-start gap-2">
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-coral-500" />
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

@@ -13,8 +13,9 @@ export function Footer() {
           <div>
             <Logo light />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-glia-100/60">
-              Clínica multidisciplinar infantil. Cuidado integrado para o
-              desenvolvimento do seu filho — de 0 a 12 anos.
+              Centro Integrado de Desenvolvimento Infantil. Avaliação
+              Funcional Integrada para reorganizar a comunicação, o
+              desenvolvimento e a rotina familiar — de 0 a 15 anos.
             </p>
             <div className="mt-5 flex gap-3">
               <SocialLink href="https://www.instagram.com/gliacentroclinico/" label="Instagram">
@@ -102,7 +103,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-glia-800 pt-8 text-xs text-glia-100/50 sm:flex-row">
-          <p>© {new Date().getFullYear()} GLIA · Clínica multidisciplinar infantil. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} GLIA · Centro Integrado de Desenvolvimento Infantil. Todos os direitos reservados.</p>
           <div className="flex gap-4">
             <a href="#" className="transition-colors hover:text-white">Política de privacidade</a>
             <a href="#" className="transition-colors hover:text-white">Termos de uso</a>

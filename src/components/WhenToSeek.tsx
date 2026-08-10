@@ -1,10 +1,10 @@
 import { CalendarHeart, MessageSquareText, Footprints, Stethoscope, HeartPulse } from 'lucide-react';
 
 const SIGNS = [
-  { icon: MessageSquareText, text: 'Atraso na fala ou dificuldade de comunicação' },
-  { icon: Footprints, text: 'Dificuldade de equilíbrio, marcha ou coordenação motora' },
-  { icon: Stethoscope, text: 'Diagnóstico de TEA, TDAH, síndrome de Down ou paralisia cerebral' },
-  { icon: HeartPulse, text: 'Sensibilidade sensorial ou dificuldade de regulação emocional' },
+  { icon: MessageSquareText, text: 'Atraso na fala ou na linguagem, ou pouco contato visual' },
+  { icon: Footprints, text: 'Não responder ao ser chamado pelo nome ou dificuldade para interagir com outras crianças' },
+  { icon: Stethoscope, text: 'Comportamentos repetitivos, atraso no desenvolvimento ou dificuldades escolares' },
+  { icon: HeartPulse, text: 'Seletividade alimentar, alterações sensoriais ou dificuldade com mudanças na rotina' },
 ];
 
 export function WhenToSeek() {
@@ -21,6 +21,9 @@ export function WhenToSeek() {
           <h2 className="mt-3 text-balance font-display text-3xl font-extrabold text-glia-900 sm:text-4xl">
             Quando procurar a Glia?
           </h2>
+          <p className="mt-3 font-display text-base italic text-coral-600">
+            Mais do que um diagnóstico, entregamos um caminho claro para o desenvolvimento.
+          </p>
         </div>
 
         <div className="mt-14 grid items-center gap-14 lg:grid-cols-2">
