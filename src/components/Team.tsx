@@ -23,18 +23,17 @@ export function Team() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-sm font-bold uppercase tracking-wider text-sun-300">
-            Nossa equipe
-          </span>
-          <h2 className="mt-3 text-balance font-display text-3xl font-extrabold text-white sm:text-4xl">
-            Profissionais que olham para o seu filho como um todo
+          <h2 className="text-balance font-display text-3xl font-extrabold text-white sm:text-4xl">
+            Os profissionais que olham para o seu filho de forma integrada e personalizada
           </h2>
           <p className="mt-4 text-pretty text-lg text-coral-50/70">
-            Especialistas com experiência e registro ativo, que se tratam entre
-            si como parte da mesma equipe — não como colegas de corredor.
+            Especialistas experientes, com registro ativo, que atuam como uma
+            verdadeira equipe — compartilhando decisões, não apenas o mesmo
+            corredor.
           </p>
           <p className="mt-3 font-display text-base italic text-sun-200">
-            Avaliamos além dos sintomas para compreender o funcionamento global da criança.
+            Não olhamos apenas para os sintomas. Investigamos como a criança
+            funciona como um todo.
           </p>
         </div>
 
