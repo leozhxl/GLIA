@@ -13,9 +13,9 @@ export function Footer() {
           <div>
             <Logo light />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-glia-100/60">
-              Centro Integrado de Desenvolvimento Infantil. Avaliação
-              Funcional Integrada para reorganizar a comunicação, o
-              desenvolvimento e a rotina familiar — de 0 a 15 anos.
+              Centro Integrado de Desenvolvimento Infantil. Diagnóstico
+              Funcional para reorganizar a comunicação, o desenvolvimento e
+              a rotina familiar — de 0 a 15 anos.
             </p>
             <div className="mt-5 flex gap-3">
               <SocialLink href="https://www.instagram.com/gliacentroclinico/" label="Instagram">
