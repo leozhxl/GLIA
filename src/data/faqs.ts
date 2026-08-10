@@ -38,7 +38,7 @@ export const FAQS: FaqItem[] = [
   },
   {
     question: 'Como funciona o tratamento?',
-    answer: 'Após a avaliação, elaboramos um plano terapêutico individualizado com objetivos claros e prioridades definidas. Toda a equipe trabalha de forma integrada para que família, escola e terapeutas caminhem na mesma direção.',
+    answer: 'Após Diagnóstico Funcional, elaboramos um Plano Terapêutico Individualizado com objetivos claros e prioridades definidas. Toda a equipe trabalha de forma integrada para que família, escola e terapeutas caminhem na mesma direção.',
   },
   {
     question: 'A família participa do tratamento?',
