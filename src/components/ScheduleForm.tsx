@@ -82,7 +82,7 @@ export function ScheduleForm() {
         </div>
         <div>
           <h3 className="text-xl font-extrabold text-glia-900">
-            Agende Diagnóstico Funcional
+            Diagnóstico Funcional
           </h3>
           <p className="text-sm text-glia-800/60">
             Respondemos em até 1 dia útil

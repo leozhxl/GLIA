@@ -23,7 +23,7 @@ export function FinalCTA() {
           </span>
 
           <h2 className="mt-5 text-balance text-3xl font-extrabold leading-[1.15] sm:text-4xl lg:text-5xl">
-            Agende Diagnóstico Funcional do seu filho
+            Agende hoje o Diagnóstico Funcional do seu filho
           </h2>
           <p className="mt-4 font-display text-lg italic text-sun-200">
             Cuidamos da criança. Transformamos a rotina da família.
