@@ -49,8 +49,8 @@ export const FAQS: FaqItem[] = [
     answer: 'Sim. Quando necessário, elaboramos orientações específicas para a equipe escolar, favorecendo a continuidade das estratégias utilizadas durante o tratamento.',
   },
   {
-    question: 'O que diferencia a GLIA de outras clínicas?',
-    answer: 'Na GLIA, a criança é avaliada de forma integrada por uma equipe interdisciplinar. Em vez de diversos pareceres separados, construímos um único plano terapêutico, considerando comunicação, comportamento, desenvolvimento, rotina familiar e participação social. Nosso objetivo é promover mudanças reais na qualidade de vida da criança e de sua família.',
+    question: 'Por que escolher a GLIA?',
+    answer: 'Nós não trabalhamos apenas para a criança falar. Trabalhamos para que ela consiga se comunicar de forma funcional dentro da vida real. Pedir. Recusar. Escolher. Se expressar. Participar. Reduzir frustração. Criar previsibilidade. Construir autonomia possível. Enquanto muitos tratamentos se concentram apenas na sessão, nós organizamos todo o entorno da criança para que a evolução consiga acontecer de forma consistente.',
   },
   {
     question: 'Qual é o principal objetivo da GLIA?',
