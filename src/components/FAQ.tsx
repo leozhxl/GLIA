@@ -12,10 +12,7 @@ export function FAQ() {
 
       <div className="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <span className="text-sm font-bold uppercase tracking-wider text-coral-600">
-            Dúvidas frequentes
-          </span>
-          <h2 className="mt-3 text-balance font-display text-3xl font-extrabold text-glia-900 sm:text-4xl">
+          <h2 className="text-balance font-display text-3xl font-extrabold text-glia-900 sm:text-4xl">
             Perguntas que toda família faz
           </h2>
         </div>
