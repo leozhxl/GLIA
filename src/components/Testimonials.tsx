@@ -22,15 +22,12 @@ export function Testimonials() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-sm font-bold uppercase tracking-wider text-coral-600">
-            Depoimentos
-          </span>
-          <h2 className="mt-3 text-balance font-display text-3xl font-extrabold text-glia-900 sm:text-4xl">
-            Famílias que encontraram um caminho mais tranquilo
+          <h2 className="text-balance font-display text-3xl font-extrabold text-glia-900 sm:text-4xl">
+            Veja o que dizem as famílias que encontraram um caminho mais tranquilo
           </h2>
           <p className="mt-4 text-pretty text-lg text-glia-800/70">
-            Relatos reais de pais e mães que chegaram à GLIA em busca de
-            respostas — e encontraram acolhimento.
+            Relatos reais de pais e mães que chegaram aqui em busca de
+            respostas e encontraram alívio.
           </p>
         </div>
 
