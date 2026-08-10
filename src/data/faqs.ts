@@ -21,7 +21,7 @@ export const FAQS: FaqItem[] = [
     answer: 'A GLIA realiza um Diagnóstico Funcional, que identifica como a criança funciona em diferentes áreas do desenvolvimento e quais são suas principais necessidades. Quando necessário, nossa equipe orienta encaminhamentos para especialistas, como neuropediatra, psiquiatra infantil, otorrinolaringologista ou outros profissionais responsáveis pelo diagnóstico médico.',
   },
   {
-    question: 'O que é a Avaliação Funcional Integrada?',
+    question: 'O que é o Diagnóstico Funcional?',
     answer: 'É um processo estruturado em quatro encontros que permite compreender a criança de forma global, envolvendo comunicação, comportamento, desenvolvimento, autonomia, rotina familiar e participação escolar. Ao final, a família recebe um plano terapêutico personalizado.',
   },
   {
