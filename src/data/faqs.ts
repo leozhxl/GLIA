@@ -18,7 +18,7 @@ export const FAQS: FaqItem[] = [
   },
   {
     question: 'A GLIA realiza diagnóstico?',
-    answer: 'A GLIA realiza uma Avaliação Funcional Integrada, que identifica como a criança funciona em diferentes áreas do desenvolvimento e quais são suas principais necessidades. Quando necessário, nossa equipe orienta encaminhamentos para especialistas, como neuropediatra, psiquiatra infantil, otorrinolaringologista ou outros profissionais responsáveis pelo diagnóstico médico.',
+    answer: 'A GLIA realiza um Diagnóstico Funcional, que identifica como a criança funciona em diferentes áreas do desenvolvimento e quais são suas principais necessidades. Quando necessário, nossa equipe orienta encaminhamentos para especialistas, como neuropediatra, psiquiatra infantil, otorrinolaringologista ou outros profissionais responsáveis pelo diagnóstico médico.',
   },
   {
     question: 'O que é a Avaliação Funcional Integrada?',
