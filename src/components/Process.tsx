@@ -47,7 +47,7 @@ export function Process() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-sm font-bold uppercase tracking-wider text-coral-600">
-            Método GLIA® · Avaliação Funcional Integrada
+            Método GLIA®
           </span>
           <h2 className="mt-3 text-balance font-display text-3xl font-extrabold text-glia-900 sm:text-4xl">
             Como funciona

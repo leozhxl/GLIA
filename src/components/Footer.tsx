@@ -57,7 +57,7 @@ export function Footer() {
               <li><a href="#equipe" className="transition-colors hover:text-white">Equipe</a></li>
               <li><a href="#depoimentos" className="transition-colors hover:text-white">Depoimentos</a></li>
               <li><a href="#faq" className="transition-colors hover:text-white">Dúvidas frequentes</a></li>
-              <li><a href="#agendar" className="transition-colors hover:text-white">Agendar avaliação</a></li>
+              <li><a href="#agendar" className="transition-colors hover:text-white">Agende Diagnóstico Funcional</a></li>
             </ul>
           </div>
 

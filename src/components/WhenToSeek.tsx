@@ -74,7 +74,7 @@ export function WhenToSeek() {
               className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-coral-500 px-7 py-4 text-base font-bold text-white shadow-lg shadow-coral-500/30 transition-all hover:bg-coral-600 active:scale-[0.98]"
             >
               <CalendarHeart className="h-5 w-5" />
-              Agendar uma consulta
+              Agende Diagnóstico Funcional
             </a>
           </div>
         </div>
