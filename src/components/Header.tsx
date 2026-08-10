@@ -80,7 +80,7 @@ export function Header() {
             className="inline-flex items-center gap-2 rounded-full bg-coral-500 px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-coral-500/30 transition-all hover:bg-coral-600 hover:shadow-coral-500/40 active:scale-95"
           >
             <MessageCircle className="h-4 w-4" />
-            Agendar Consulta
+            Agendar Diagnóstico
           </a>
         </div>
 

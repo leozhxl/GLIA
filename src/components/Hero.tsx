@@ -28,12 +28,12 @@ export function Hero() {
 
           <p className="mt-6 flex items-center gap-3 font-display text-lg italic text-sand-100/80">
             <span className="h-px w-8 bg-coral-300/60" />
-            Método GLIA® · Avaliação Funcional Integrada
+            Método GLIA®
           </p>
 
           <p className="mt-4 max-w-xl text-pretty text-base leading-relaxed text-sand-100/85 sm:text-lg">
-            Na GLIA, não tratamos apenas sintomas. Avaliamos a criança de forma
-            integrada — Fonoaudiologia, Psicologia, Neuropsicologia,
+            Na GLIA, não tratamos apenas sintomas. Realizamos um diagnóstico
+            funcional integrado — Fonoaudiologia, Psicologia, Neuropsicologia,
             Psicopedagogia, Terapia ABA e Terapia Ocupacional sob o mesmo teto —
             para compreender o que realmente está impactando seu desenvolvimento
             e construir um plano terapêutico individualizado para toda a família.
@@ -45,7 +45,7 @@ export function Hero() {
               className="inline-flex items-center justify-center gap-2 rounded-full bg-coral-500 px-7 py-4 text-base font-bold text-white shadow-xl shadow-coral-950/30 transition-all hover:bg-coral-600 active:scale-95"
             >
               <CalendarHeart className="h-5 w-5" />
-              Agende uma Avaliação Funcional Integrada
+              Agende o Diagnóstico Funcional
             </a>
           </div>
         </div>

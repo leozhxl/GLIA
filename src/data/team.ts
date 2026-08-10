@@ -12,7 +12,7 @@ export const TEAM: TeamMember[] = [
     role: 'Fonoaudióloga Clínica Infantil',
     credential: 'CRFa 3-12.801 · Especialista em Autismo',
     bio: 'Atuação voltada ao desenvolvimento infantil, comunicação funcional e intervenção baseada em evidências. Pós-graduada em Comunicação Aumentativa e Alternativa (CAA) e Análise do Comportamento Aplicada (ABA), atua na avaliação funcional integrada de crianças com atrasos no desenvolvimento, Transtorno do Espectro Autista (TEA) e outras alterações da comunicação. Também é Perita Judicial em Fonoaudiologia.',
-    image: '/equipe-juliana-fernandes.jpg',
+    image: '/equipe-josiane-vargas.jpg',
   },
   {
     name: 'Aline Paganini',
@@ -26,6 +26,6 @@ export const TEAM: TeamMember[] = [
     role: 'Psicopedagoga · Neuropsicopedagoga · Terapeuta ABA',
     credential: 'Mestre pela UFSC',
     bio: 'Dedicada ao desenvolvimento das habilidades cognitivas, acadêmicas e funcionais da criança. Está em fase final da graduação em Terapia Ocupacional (conclusão prevista para outubro de 2026), ampliando sua atuação na promoção da autonomia, aprendizagem e participação funcional em diferentes contextos.',
-    image: '/equipe-josiane-vargas.jpg',
+    image: '/equipe-juliana-fernandes.jpg',
   },
 ];
