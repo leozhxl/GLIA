@@ -14,7 +14,7 @@ export const FAQS: FaqItem[] = [
   },
   {
     question: 'Preciso ter um diagnóstico para iniciar?',
-    answer: 'Não. Muitas crianças chegam até nós apenas com sinais de atraso ou dificuldades no desenvolvimento. Nossa equipe realiza uma avaliação funcional completa para compreender as necessidades da criança e indicar o melhor caminho terapêutico.',
+    answer: 'Não. Muitas crianças chegam até nós apenas com sinais de atraso ou dificuldades no desenvolvimento. Nossa equipe realiza um Diagnóstico Funcional completo para compreender as necessidades da criança e indicar o melhor caminho terapêutico.',
   },
   {
     question: 'A GLIA realiza diagnóstico?',
