@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { TrustStrip } from '@/components/TrustStrip';
@@ -30,6 +31,7 @@ function App() {
       </main>
       <Footer />
       <WhatsAppButton />
+      <Analytics />
     </div>
   );
 }
