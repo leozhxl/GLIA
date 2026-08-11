@@ -10,11 +10,20 @@
   body {
     @apply font-sans text-glia-950 bg-sand-50;
   }
+  button, a, input, select, textarea {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral-500 focus-visible:ring-offset-2;
+  }
   h1, h2, h3, h4 {
     @apply font-display;
   }
   ::selection {
     @apply bg-glia-200 text-glia-900;
+  }
+}
+
+@layer components {
+  .skip-link {
+    @apply fixed left-4 top-4 z-[100] -translate-y-24 rounded-lg bg-white px-4 py-3 font-bold text-glia-900 shadow-xl transition-transform focus:translate-y-0;
   }
 }
 
@@ -27,5 +36,61 @@
   }
   .section-anchor-offset {
     scroll-margin-top: 6rem;
+  }
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.review-marquee {
+  animation: review-marquee 80s linear infinite;
+  will-change: transform;
+}
+
+.review-marquee:hover {
+  animation-play-state: paused;
+}
+
+.review-marquee-mask {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+}
+
+@keyframes review-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .review-marquee {
+    animation: none;
   }
 }

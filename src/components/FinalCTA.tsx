@@ -1,5 +1,7 @@
 import { Clock, MapPin, Phone } from 'lucide-react';
 import { ScheduleForm } from './ScheduleForm';
+import { SectionDivider } from './SectionDivider';
+import { CLINIC } from '@/lib/constants';
 
 export function FinalCTA() {
   return (
@@ -7,7 +9,7 @@ export function FinalCTA() {
       id="agendar"
       className="section-anchor-offset relative overflow-hidden bg-gradient-to-br from-coral-900 via-coral-800 to-coral-900 py-20 text-white sm:py-28"
     >
-      <div className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-sun-600 via-sun-300 to-sun-600" />
+      <SectionDivider />
       {/* Decorative blobs */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -left-20 -top-10 h-80 w-80 animate-blob-morph-slow rounded-blob bg-coral-500/20 blur-2xl" />
@@ -37,11 +39,11 @@ export function FinalCTA() {
           <div className="mt-8 space-y-3">
             <div className="flex items-center gap-3 text-coral-50/80">
               <MapPin className="h-5 w-5 shrink-0 text-coral-300" />
-              <span>R. Antônio Simão, 87 · São José, Sombrio - SC · 88960-000</span>
+              <span>{CLINIC.address}, {CLINIC.city}</span>
             </div>
             <div className="flex items-center gap-3 text-coral-50/80">
               <Phone className="h-5 w-5 shrink-0 text-coral-300" />
-              <span>(48) 9634-7879 · Seg a Sex, 08h às 18h</span>
+              <span>{CLINIC.phoneDisplay} · {CLINIC.hours}</span>
             </div>
             <div className="flex items-center gap-3 text-coral-50/80">
               <Clock className="h-5 w-5 shrink-0 text-coral-300" />

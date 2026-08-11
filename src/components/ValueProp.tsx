@@ -1,4 +1,5 @@
 import { Users, MessagesSquare, ClipboardList, Baby, type LucideIcon } from 'lucide-react';
+import { SectionDivider } from './SectionDivider';
 
 const ASPECTS = [
   'Comunicação',
@@ -38,7 +39,7 @@ const VALUES: { icon: LucideIcon; title: string; text: string }[] = [
 export function ValueProp() {
   return (
     <section id="sobre" className="section-anchor-offset relative overflow-hidden bg-gradient-to-br from-coral-900 via-coral-800 to-coral-900 py-20 text-white sm:py-28">
-      <div className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-sun-600 via-sun-300 to-sun-600" />
+      <SectionDivider />
       {/* Decorative glow shapes */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -left-16 top-10 h-72 w-72 animate-blob-morph-slow rounded-blob bg-coral-400/20 blur-3xl" />

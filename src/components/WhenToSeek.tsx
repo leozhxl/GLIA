@@ -26,6 +26,9 @@ export function WhenToSeek() {
             <img
               src="/clinica-recepcao.jpg"
               alt="Ambiente acolhedor da Glia, preparado para receber a criança e a família"
+              width="1200"
+              height="1600"
+              loading="lazy"
               className="relative aspect-[4/3] w-full rounded-[1.75rem] object-cover shadow-2xl shadow-glia-950/10 ring-1 ring-white/60"
             />
             <div className="absolute -bottom-5 -right-5 rounded-2xl bg-white p-4 shadow-xl shadow-glia-950/10 ring-1 ring-glia-100">

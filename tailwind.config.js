@@ -69,32 +69,16 @@ export default {
       animation: {
         'blob-morph': 'blob-morph 12s ease-in-out infinite',
         'blob-morph-slow': 'blob-morph 18s ease-in-out infinite',
-        'float': 'float 6s ease-in-out infinite',
-        'float-delayed': 'float 6s ease-in-out 2s infinite',
         'fade-up': 'fade-up 0.7s ease-out both',
-        'fade-in': 'fade-in 0.6s ease-out both',
-        'accordion-down': 'accordion-down 0.3s ease-out',
       },
       keyframes: {
         'blob-morph': {
           '0%, 100%': { borderRadius: '42% 58% 63% 37% / 41% 44% 56% 59%' },
           '50%': { borderRadius: '58% 42% 37% 63% / 59% 56% 44% 41%' },
         },
-        'float': {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-14px)' },
-        },
         'fade-up': {
           '0%': { opacity: '0', transform: 'translateY(24px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
-        },
-        'fade-in': {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
-        'accordion-down': {
-          '0%': { height: '0', opacity: '0' },
-          '100%': { height: 'var(--radix-accordion-content-height)', opacity: '1' },
         },
       },
     },

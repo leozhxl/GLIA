@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from 'react';
+import { useState, type FormEvent, type ReactNode } from 'react';
 import {
   CalendarHeart,
   CheckCircle2,
@@ -8,10 +8,15 @@ import {
   Clock,
   Mail,
 } from 'lucide-react';
-import { whatsappLink } from '@/lib/constants';
+import type { LucideIcon } from 'lucide-react';
+import { createWhatsAppLink, whatsappLink } from '@/lib/constants';
 import { SPECIALTIES } from '@/data/specialties';
 
 type Status = 'idle' | 'success';
+
+function getFormValue(data: FormData, name: string) {
+  return data.get(name)?.toString().trim() ?? '';
+}
 
 export function ScheduleForm() {
   const [status, setStatus] = useState<Status>('idle');
@@ -21,13 +26,13 @@ export function ScheduleForm() {
 
     const form = e.currentTarget;
     const data = new FormData(form);
-    const parentName = (data.get('parent_name') as string)?.trim();
-    const childName = (data.get('child_name') as string)?.trim();
-    const phone = (data.get('phone') as string)?.trim();
-    const email = (data.get('email') as string)?.trim();
-    const specialty = (data.get('specialty') as string)?.trim();
-    const preferredTime = (data.get('preferred_time') as string)?.trim();
-    const message = (data.get('message') as string)?.trim();
+    const parentName = getFormValue(data, 'parent_name');
+    const childName = getFormValue(data, 'child_name');
+    const phone = getFormValue(data, 'phone');
+    const email = getFormValue(data, 'email');
+    const specialty = getFormValue(data, 'specialty');
+    const preferredTime = getFormValue(data, 'preferred_time');
+    const message = getFormValue(data, 'message');
 
     const lines = [
       'Olá! Gostaria de agendar uma avaliação na Glia.',
@@ -41,7 +46,7 @@ export function ScheduleForm() {
       message && `Mensagem: ${message}`,
     ].filter(Boolean);
 
-    const whatsappUrl = `${whatsappLink}?text=${encodeURIComponent(lines.join('\n'))}`;
+    const whatsappUrl = createWhatsAppLink(lines.join('\n'));
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
 
     setStatus('success');
@@ -50,7 +55,7 @@ export function ScheduleForm() {
 
   if (status === 'success') {
     return (
-      <div className="flex flex-col items-center justify-center rounded-3xl bg-white p-8 text-center shadow-xl shadow-glia-950/5 sm:p-10">
+      <div className="flex flex-col items-center justify-center rounded-3xl bg-white p-8 text-center shadow-xl shadow-glia-950/5 sm:p-10" role="status">
         <div className="grid h-16 w-16 place-items-center rounded-full bg-glia-100 text-glia-600">
           <CheckCircle2 className="h-9 w-9" />
         </div>
@@ -94,6 +99,7 @@ export function ScheduleForm() {
         <Field label="Nome do responsável" required icon={User}>
           <input
             name="parent_name"
+            autoComplete="name"
             required
             type="text"
             placeholder="Como podemos te chamar?"
@@ -104,6 +110,7 @@ export function ScheduleForm() {
         <Field label="Nome da criança" icon={Baby}>
           <input
             name="child_name"
+            autoComplete="off"
             type="text"
             placeholder="Nome do seu filho(a)"
             className="w-full rounded-xl border-2 border-glia-100 bg-sand-50 px-4 py-3 text-base text-glia-900 outline-none transition-colors placeholder:text-glia-800/30 focus:border-glia-400"
@@ -114,6 +121,7 @@ export function ScheduleForm() {
           <Field label="Telefone / WhatsApp" required icon={Phone}>
             <input
               name="phone"
+              autoComplete="tel"
               required
               type="tel"
               placeholder="(11) 99999-9999"
@@ -124,6 +132,7 @@ export function ScheduleForm() {
           <Field label="E-mail" icon={Mail}>
             <input
               name="email"
+              autoComplete="email"
               type="email"
               placeholder="seu@email.com"
               className="w-full rounded-xl border-2 border-glia-100 bg-sand-50 px-4 py-3 text-base text-glia-900 outline-none transition-colors placeholder:text-glia-800/30 focus:border-glia-400"
@@ -204,8 +213,8 @@ export function ScheduleForm() {
 interface FieldProps {
   label: string;
   required?: boolean;
-  icon?: typeof User;
-  children: React.ReactNode;
+  icon?: LucideIcon;
+  children: ReactNode;
 }
 
 function Field({ label, required, icon: Icon, children }: FieldProps) {

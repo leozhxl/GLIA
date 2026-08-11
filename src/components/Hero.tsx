@@ -1,5 +1,4 @@
-import { CalendarHeart, MessageCircle } from 'lucide-react';
-import { whatsappLink } from '@/lib/constants';
+import { CalendarHeart } from 'lucide-react';
 
 const HERO_IMAGE = '/clinica-recepcao.jpg';
 
@@ -11,6 +10,9 @@ export function Hero() {
         src={HERO_IMAGE}
         alt="Recepção acolhedora da Glia, com poltronas confortáveis e a marca da clínica na parede"
         loading="eager"
+        fetchPriority="high"
+        width="1200"
+        height="1600"
         className="absolute inset-0 -z-20 h-full w-full object-cover"
       />
       <div className="absolute inset-0 -z-10 bg-gradient-to-r from-glia-950/85 via-glia-950/60 to-glia-950/25" />
@@ -50,17 +52,6 @@ export function Hero() {
           </div>
         </div>
       </div>
-
-      {/* Floating WhatsApp pill */}
-      <a
-        href={whatsappLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="absolute bottom-6 right-6 z-10 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-3.5 text-sm font-bold text-white shadow-2xl shadow-black/30 transition-transform hover:scale-105 active:scale-95 sm:bottom-8 sm:right-8"
-      >
-        <MessageCircle className="h-4 w-4" />
-        Agendar pelo WhatsApp
-      </a>
     </section>
   );
 }

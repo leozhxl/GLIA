@@ -1,4 +1,4 @@
-import { Search, FileText, Users, TrendingUp } from 'lucide-react';
+import { ArrowRight, Search, FileText, Users, TrendingUp } from 'lucide-react';
 
 const STEPS = [
   {
@@ -60,35 +60,44 @@ export function Process() {
           </p>
         </div>
 
-        <div className="relative mt-16">
-          {/* Connecting line — desktop */}
-          <div className="absolute left-0 right-0 top-9 hidden h-0.5 bg-gradient-to-r from-coral-300 via-sun-300 to-coral-300 lg:block" />
+        <div className="mt-16 grid gap-6 lg:grid-cols-4 lg:gap-5">
+          {STEPS.map((step, i) => (
+            <div key={step.title} className="group relative">
+              <article className="relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-white/80 bg-white/85 p-7 shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:border-coral-200 hover:bg-white hover:shadow-2xl hover:shadow-coral-900/10">
+                <span
+                  aria-hidden="true"
+                  className="absolute right-5 top-3 font-display text-6xl font-extrabold leading-none text-coral-100/80 transition-colors duration-300 group-hover:text-coral-200"
+                >
+                  0{i + 1}
+                </span>
 
-          <div className="grid gap-6 lg:grid-cols-4">
-            {STEPS.map((step, i) => (
-              <div
-                key={step.title}
-                className="group relative flex flex-col items-center rounded-3xl bg-white/80 p-6 text-center shadow-sm ring-1 ring-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-1.5 hover:bg-white hover:shadow-xl hover:shadow-coral-900/10 lg:items-start lg:text-left"
-              >
-                {/* Number + icon */}
-                <div className="relative z-10 flex flex-col items-center lg:items-start">
-                  <div className="grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-coral-400 to-coral-600 text-white shadow-lg shadow-coral-500/30 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
-                    <step.icon className="h-7 w-7" strokeWidth={1.8} />
+                <div className="relative flex items-center justify-between">
+                  <div className="grid h-16 w-16 place-items-center rounded-2xl bg-gradient-to-br from-coral-400 to-coral-600 text-white shadow-lg shadow-coral-500/25 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3">
+                    <step.icon className="h-8 w-8" strokeWidth={1.8} />
                   </div>
-                  <span className="mt-3 text-xs font-extrabold tracking-wide text-coral-600">
-                    ETAPA {i + 1}
+                  <span className="rounded-full bg-coral-50 px-3 py-1 text-[0.65rem] font-extrabold uppercase tracking-wider text-coral-700">
+                    Etapa {i + 1}
                   </span>
                 </div>
 
-                <h3 className="mt-2 text-xl font-bold text-glia-900">
+                <h3 className="relative mt-7 text-xl font-bold text-glia-900">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-glia-800/70">
+                <p className="relative mt-3 text-sm leading-relaxed text-glia-800/70">
                   {step.text}
                 </p>
-              </div>
-            ))}
-          </div>
+
+              </article>
+
+              {i < STEPS.length - 1 && (
+                <ArrowRight
+                  aria-hidden="true"
+                  className="absolute -right-5 top-12 z-10 hidden h-10 w-10 rounded-full border border-coral-100 bg-sand-50 p-2 text-coral-500 lg:block"
+                  strokeWidth={2}
+                />
+              )}
+            </div>
+          ))}
         </div>
 
         <div className="mx-auto mt-16 max-w-3xl rounded-3xl bg-white/80 p-8 shadow-sm ring-1 ring-white backdrop-blur-sm sm:p-10">

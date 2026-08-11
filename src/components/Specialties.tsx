@@ -1,10 +1,10 @@
 import { SPECIALTIES } from '@/data/specialties';
 
 const PALETTE = [
-  { blob: 'bg-coral-100', icon: 'bg-coral-100 text-coral-600', iconHover: 'group-hover:bg-coral-500 group-hover:text-white', label: 'text-coral-600' },
-  { blob: 'bg-sun-100', icon: 'bg-sun-100 text-sun-700', iconHover: 'group-hover:bg-sun-500 group-hover:text-white', label: 'text-sun-700' },
-  { blob: 'bg-coral-100', icon: 'bg-coral-100 text-coral-700', iconHover: 'group-hover:bg-coral-600 group-hover:text-white', label: 'text-coral-700' },
-  { blob: 'bg-sun-100', icon: 'bg-sun-100 text-sun-600', iconHover: 'group-hover:bg-sun-400 group-hover:text-white', label: 'text-sun-600' },
+  { blob: 'bg-coral-100', label: 'text-coral-600' },
+  { blob: 'bg-sun-100', label: 'text-sun-700' },
+  { blob: 'bg-coral-100', label: 'text-coral-700' },
+  { blob: 'bg-sun-100', label: 'text-sun-600' },
 ];
 
 export function Specialties() {
@@ -24,7 +24,7 @@ export function Specialties() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {SPECIALTIES.map((s, i) => {
             const c = PALETTE[i % PALETTE.length];
             return (
@@ -34,9 +34,7 @@ export function Specialties() {
               >
                 <div className={`absolute -right-8 -top-8 h-24 w-24 rounded-full ${c.blob} opacity-60 transition-transform duration-500 group-hover:scale-150`} />
 
-                <div className={`relative grid h-14 w-14 place-items-center rounded-2xl transition-colors duration-300 ${c.icon} ${c.iconHover}`}>
-                  <s.icon className="h-7 w-7" strokeWidth={1.8} />
-                </div>
+                <s.icon className="relative h-9 w-9 text-coral-600" strokeWidth={1.8} />
 
                 <h3 className="relative mt-5 text-xl font-bold text-glia-900">
                   {s.name}
