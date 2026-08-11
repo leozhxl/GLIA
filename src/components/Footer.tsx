@@ -10,7 +10,7 @@ export function Footer() {
     <footer className="relative bg-glia-950 text-glia-100/70">
       <SectionDivider />
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-[1.5fr_1fr_1fr_1.2fr]">
+        <div data-reveal className="grid gap-10 lg:grid-cols-[1.5fr_1fr_1fr_1.2fr]">
           {/* Brand */}
           <div>
             <Logo variant="inverse" />
@@ -94,7 +94,7 @@ export function Footer() {
         </div>
 
         {/* Map embed */}
-        <div className="mt-12 overflow-hidden rounded-2xl border border-glia-800">
+        <div data-reveal className="mt-12 overflow-hidden rounded-2xl border border-glia-800">
           <iframe
             title="Mapa da clínica GLIA"
             src="https://www.openstreetmap.org/export/embed.html?bbox=-49.6536,-29.1162,-49.6336,-29.1062&amp;layer=mapnik&amp;marker=-29.1112,-49.6436"

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="GLIA">
+  <text x="38" y="319" fill="#58c9c1" font-family="Georgia, 'Times New Roman', serif" font-size="171" letter-spacing="-16">GLIA</text>
+  <path d="M52 350h385M52 365h385" fill="none" stroke="#58c9c1" stroke-linecap="round" stroke-width="5" />
+  <circle cx="438" cy="127" r="13" fill="#8ed5d1" />
+  <path d="M428 117l-29-29m42 18 8-38m-10 60 36-14" fill="none" stroke="#58c9c1" stroke-linecap="round" stroke-width="9" />
+</svg>

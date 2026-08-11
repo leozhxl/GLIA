@@ -13,7 +13,7 @@ export function Team() {
       <div className="pointer-events-none absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-sun-400/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+        <div data-reveal="zoom" className="mx-auto max-w-2xl text-center">
           <h2 className="text-balance font-display text-3xl font-extrabold text-white sm:text-4xl">
             Os profissionais que olham para o seu filho de forma integrada e personalizada
           </h2>
@@ -28,10 +28,11 @@ export function Team() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="reveal-stagger mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {TEAM.map((member) => (
             <article
               key={member.name}
+              data-reveal="zoom"
               className="group isolate overflow-hidden rounded-3xl bg-coral-950 ring-2 ring-sun-400/70 transition-colors duration-300 hover:ring-sun-300"
             >
               <div className="relative z-10 aspect-[4/5] bg-coral-800">

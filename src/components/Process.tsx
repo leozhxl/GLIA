@@ -45,7 +45,7 @@ export function Process() {
       <div className="pointer-events-none absolute -right-16 bottom-0 h-64 w-64 rounded-full bg-sun-200/30 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+        <div data-reveal="zoom" className="mx-auto max-w-2xl text-center">
           <span className="text-sm font-bold uppercase tracking-wider text-coral-600">
             Método GLIA®
           </span>
@@ -60,9 +60,9 @@ export function Process() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-6 lg:grid-cols-4 lg:gap-5">
+        <div className="reveal-stagger mt-16 grid gap-6 lg:grid-cols-4 lg:gap-5">
           {STEPS.map((step, i) => (
-            <div key={step.title} className="group relative">
+            <div key={step.title} data-reveal="zoom" className="group relative">
               <article className="relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-white/80 bg-white/85 p-7 shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:border-coral-200 hover:bg-white hover:shadow-2xl hover:shadow-coral-900/10">
                 <span
                   aria-hidden="true"
@@ -100,7 +100,7 @@ export function Process() {
           ))}
         </div>
 
-        <div className="mx-auto mt-16 max-w-3xl rounded-3xl bg-white/80 p-8 shadow-sm ring-1 ring-white backdrop-blur-sm sm:p-10">
+        <div data-reveal className="mx-auto mt-16 max-w-3xl rounded-3xl bg-white/80 p-8 shadow-sm ring-1 ring-white backdrop-blur-sm sm:p-10">
           <h3 className="text-center font-display text-xl font-bold text-glia-900 sm:text-2xl">
             O que você recebe no Diagnóstico Funcional
           </h3>

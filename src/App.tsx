@@ -10,10 +10,12 @@ import { Testimonials } from '@/components/Testimonials';
 import { FAQ } from '@/components/FAQ';
 import { FinalCTA } from '@/components/FinalCTA';
 import { Footer } from '@/components/Footer';
+import { ScrollReveal } from '@/components/ScrollReveal';
 
 function App() {
   return (
     <div className="min-h-screen overflow-x-hidden">
+      <ScrollReveal />
       <a href="#conteudo" className="skip-link">
         Pular para o conteúdo
       </a>

@@ -28,7 +28,7 @@ export function Testimonials() {
       <div className="pointer-events-none absolute -right-16 bottom-10 h-64 w-64 rounded-full bg-sun-200/40 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
+        <div data-reveal="zoom" className="mx-auto max-w-3xl text-center">
           <div className="mx-auto inline-flex items-center gap-3 rounded-2xl bg-white px-4 py-3 text-left shadow-sm ring-1 ring-glia-100">
             <GoogleWordmark />
             <div>
@@ -60,7 +60,7 @@ export function Testimonials() {
           </p>
         </div>
 
-        <div className="review-marquee-mask relative mt-14 overflow-hidden">
+        <div data-reveal className="review-marquee-mask relative mt-14 overflow-hidden">
           <div
             className="review-marquee flex w-max"
             aria-label="Carrossel de avaliações de clientes"

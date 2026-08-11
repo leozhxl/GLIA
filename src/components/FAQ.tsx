@@ -19,7 +19,7 @@ export function FAQ() {
       <div className="pointer-events-none absolute -left-20 bottom-0 h-64 w-64 rounded-full bg-sun-200/40 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
+        <div data-reveal="zoom" className="mx-auto max-w-3xl text-center">
           <span className="inline-flex rounded-full bg-white px-4 py-1.5 text-sm font-bold text-coral-700 shadow-sm ring-1 ring-coral-100">
             Central de ajuda
           </span>
@@ -32,7 +32,7 @@ export function FAQ() {
           </p>
         </div>
 
-        <div className="mt-10 grid items-start gap-4 lg:grid-cols-2 lg:gap-x-6 lg:gap-y-4">
+        <div data-reveal className="mt-10 grid items-start gap-4 lg:grid-cols-2 lg:gap-x-6 lg:gap-y-4">
           {FAQS.map((item, i) => {
             const isOpen = openItems.includes(i);
             return (

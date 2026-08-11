@@ -14,14 +14,14 @@ export function WhenToSeek() {
       <div className="pointer-events-none absolute -left-24 bottom-0 h-72 w-72 rounded-full bg-sun-100/40 blur-3xl" />
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+        <div data-reveal="zoom" className="mx-auto max-w-2xl text-center">
           <h2 className="text-balance font-display text-3xl font-extrabold text-glia-900 sm:text-4xl">
             Quando procurar a Glia?
           </h2>
         </div>
 
         <div className="mt-14 grid items-center gap-14 lg:grid-cols-2">
-          <div className="relative mx-auto w-full max-w-md lg:max-w-none">
+          <div data-reveal="left" className="relative mx-auto w-full max-w-md lg:max-w-none">
             <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-coral-200/60 to-sun-200/50 blur-xl" />
             <img
               src="/clinica-recepcao.jpg"
@@ -41,7 +41,7 @@ export function WhenToSeek() {
             </div>
           </div>
 
-          <div>
+          <div data-reveal="right">
             <p className="text-pretty text-lg leading-relaxed text-glia-700">
               Muitas famílias só percebem que algo pede atenção quando o dia a dia
               já ficou difícil. Seja por indicação da escola, do pediatra ou por

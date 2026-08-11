@@ -11,16 +11,10 @@
   "theme_color": "#20584c",
   "icons": [
     {
-      "src": "/favicon-glia-192.png",
-      "type": "image/png",
-      "sizes": "192x192",
+      "src": "/favicon.svg?v=2",
+      "type": "image/svg+xml",
+      "sizes": "any",
       "purpose": "any"
-    },
-    {
-      "src": "/favicon-glia.png",
-      "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "any maskable"
     }
   ]
 }

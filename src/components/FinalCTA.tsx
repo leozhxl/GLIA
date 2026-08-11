@@ -18,7 +18,7 @@ export function FinalCTA() {
 
       <div className="relative mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8">
         {/* Copy side */}
-        <div>
+        <div data-reveal="left">
           <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-bold text-sun-300">
             <Clock className="h-4 w-4" />
             O desenvolvimento não espera
@@ -53,7 +53,7 @@ export function FinalCTA() {
         </div>
 
         {/* Form side */}
-        <div id="contato" className="section-anchor-offset">
+        <div id="contato" data-reveal="right" className="section-anchor-offset">
           <ScheduleForm />
         </div>
       </div>
