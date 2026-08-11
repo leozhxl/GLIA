@@ -97,7 +97,7 @@ export function Footer() {
         <div className="mt-12 overflow-hidden rounded-2xl border border-glia-800">
           <iframe
             title="Mapa da clínica GLIA"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-49.6465,-29.0089,-49.6165,-28.9889&amp;layer=mapnik&amp;marker=-28.9989,-49.6314"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-49.6536,-29.1162,-49.6336,-29.1062&amp;layer=mapnik&amp;marker=-29.1112,-49.6436"
             className="h-56 w-full grayscale-[0.3]"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -109,7 +109,12 @@ export function Footer() {
             <Logo variant="inverse" compact />
             <p>© {new Date().getFullYear()} {CLINIC.fullName}. Todos os direitos reservados.</p>
           </div>
-          <a href="#top" className="transition-colors hover:text-white">Voltar ao início</a>
+          <div className="flex items-center gap-4">
+            <a href="/privacidade/" className="transition-colors hover:text-white">
+              Política de privacidade
+            </a>
+            <a href="#top" className="transition-colors hover:text-white">Voltar ao início</a>
+          </div>
         </div>
       </div>
     </footer>

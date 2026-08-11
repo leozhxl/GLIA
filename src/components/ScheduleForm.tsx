@@ -187,6 +187,28 @@ export function ScheduleForm() {
         </Field>
       </div>
 
+      <label className="mt-5 flex items-start gap-3 rounded-2xl bg-sand-50 p-4 text-sm leading-relaxed text-glia-800/70 ring-1 ring-glia-100">
+        <input
+          type="checkbox"
+          name="privacy_acceptance"
+          required
+          className="mt-1 h-4 w-4 shrink-0 accent-coral-600"
+        />
+        <span>
+          Li e concordo com a{' '}
+          <a
+            href="/privacidade/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold text-coral-700 underline decoration-coral-200 underline-offset-2 hover:text-coral-800"
+          >
+            Política de Privacidade
+          </a>
+          . Ao continuar, sua mensagem será aberta no WhatsApp para você
+          revisar e enviar.
+        </span>
+      </label>
+
       <button
         type="submit"
         className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-coral-500 px-6 py-4 text-base font-bold text-white shadow-lg shadow-coral-500/30 transition-all hover:bg-coral-600 active:scale-[0.98]"
