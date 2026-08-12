@@ -1,7 +1,7 @@
 {
   "name": "GLIA · Centro Integrado de Desenvolvimento Infantil",
   "short_name": "GLIA",
-  "description": "Centro Integrado de Desenvolvimento Infantil em Sombrio, SC.",
+  "description": "Avaliação e cuidado integrado para crianças e adolescentes em Sombrio, SC.",
   "id": "/",
   "lang": "pt-BR",
   "start_url": "/",
@@ -11,10 +11,10 @@
   "theme_color": "#20584c",
   "icons": [
     {
-      "src": "/favicon.svg?v=2",
-      "type": "image/svg+xml",
-      "sizes": "any",
-      "purpose": "any"
+      "src": "/favicon-glia-192.png?v=3",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
     }
   ]
 }
