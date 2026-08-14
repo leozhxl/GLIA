@@ -1,11 +1,13 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "glia-centro-clinico",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "check": "npm run typecheck && npm run lint",
+    "check:build": "npm run check && npm run build",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json"

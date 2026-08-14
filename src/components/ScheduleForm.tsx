@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from 'react';
+import { useState, type FormEvent, type ReactNode } from 'react';
 import {
   CalendarHeart,
   CheckCircle2,
@@ -8,10 +8,15 @@ import {
   Clock,
   Mail,
 } from 'lucide-react';
-import { whatsappLink } from '@/lib/constants';
+import type { LucideIcon } from 'lucide-react';
+import { createWhatsAppLink, whatsappLink } from '@/lib/constants';
 import { SPECIALTIES } from '@/data/specialties';
 
 type Status = 'idle' | 'success';
+
+function getFormValue(data: FormData, name: string) {
+  return data.get(name)?.toString().trim() ?? '';
+}
 
 export function ScheduleForm() {
   const [status, setStatus] = useState<Status>('idle');
@@ -21,13 +26,13 @@ export function ScheduleForm() {
 
     const form = e.currentTarget;
     const data = new FormData(form);
-    const parentName = (data.get('parent_name') as string)?.trim();
-    const childName = (data.get('child_name') as string)?.trim();
-    const phone = (data.get('phone') as string)?.trim();
-    const email = (data.get('email') as string)?.trim();
-    const specialty = (data.get('specialty') as string)?.trim();
-    const preferredTime = (data.get('preferred_time') as string)?.trim();
-    const message = (data.get('message') as string)?.trim();
+    const parentName = getFormValue(data, 'parent_name');
+    const childName = getFormValue(data, 'child_name');
+    const phone = getFormValue(data, 'phone');
+    const email = getFormValue(data, 'email');
+    const specialty = getFormValue(data, 'specialty');
+    const preferredTime = getFormValue(data, 'preferred_time');
+    const message = getFormValue(data, 'message');
 
     const lines = [
       'Olá! Gostaria de agendar uma avaliação na Glia.',
@@ -41,7 +46,7 @@ export function ScheduleForm() {
       message && `Mensagem: ${message}`,
     ].filter(Boolean);
 
-    const whatsappUrl = `${whatsappLink}?text=${encodeURIComponent(lines.join('\n'))}`;
+    const whatsappUrl = createWhatsAppLink(lines.join('\n'));
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
 
     setStatus('success');
@@ -50,7 +55,7 @@ export function ScheduleForm() {
 
   if (status === 'success') {
     return (
-      <div className="flex flex-col items-center justify-center rounded-3xl bg-white p-8 text-center shadow-xl shadow-glia-950/5 sm:p-10">
+      <div className="flex flex-col items-center justify-center rounded-3xl bg-white p-8 text-center shadow-xl shadow-glia-950/5 sm:p-10" role="status">
         <div className="grid h-16 w-16 place-items-center rounded-full bg-glia-100 text-glia-600">
           <CheckCircle2 className="h-9 w-9" />
         </div>
@@ -94,6 +99,7 @@ export function ScheduleForm() {
         <Field label="Nome do responsável" required icon={User}>
           <input
             name="parent_name"
+            autoComplete="name"
             required
             type="text"
             placeholder="Como podemos te chamar?"
@@ -104,6 +110,7 @@ export function ScheduleForm() {
         <Field label="Nome da criança" icon={Baby}>
           <input
             name="child_name"
+            autoComplete="off"
             type="text"
             placeholder="Nome do seu filho(a)"
             className="w-full rounded-xl border-2 border-glia-100 bg-sand-50 px-4 py-3 text-base text-glia-900 outline-none transition-colors placeholder:text-glia-800/30 focus:border-glia-400"
@@ -114,6 +121,7 @@ export function ScheduleForm() {
           <Field label="Telefone / WhatsApp" required icon={Phone}>
             <input
               name="phone"
+              autoComplete="tel"
               required
               type="tel"
               placeholder="(11) 99999-9999"
@@ -124,6 +132,7 @@ export function ScheduleForm() {
           <Field label="E-mail" icon={Mail}>
             <input
               name="email"
+              autoComplete="email"
               type="email"
               placeholder="seu@email.com"
               className="w-full rounded-xl border-2 border-glia-100 bg-sand-50 px-4 py-3 text-base text-glia-900 outline-none transition-colors placeholder:text-glia-800/30 focus:border-glia-400"
@@ -178,6 +187,28 @@ export function ScheduleForm() {
         </Field>
       </div>
 
+      <label className="mt-5 flex items-start gap-3 rounded-2xl bg-sand-50 p-4 text-sm leading-relaxed text-glia-800/70 ring-1 ring-glia-100">
+        <input
+          type="checkbox"
+          name="privacy_acceptance"
+          required
+          className="mt-1 h-4 w-4 shrink-0 accent-coral-600"
+        />
+        <span>
+          Li e concordo com a{' '}
+          <a
+            href="/privacidade/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold text-coral-700 underline decoration-coral-200 underline-offset-2 hover:text-coral-800"
+          >
+            Política de Privacidade
+          </a>
+          . Ao continuar, sua mensagem será aberta no WhatsApp para você
+          revisar e enviar.
+        </span>
+      </label>
+
       <button
         type="submit"
         className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-coral-500 px-6 py-4 text-base font-bold text-white shadow-lg shadow-coral-500/30 transition-all hover:bg-coral-600 active:scale-[0.98]"
@@ -204,8 +235,8 @@ export function ScheduleForm() {
 interface FieldProps {
   label: string;
   required?: boolean;
-  icon?: typeof User;
-  children: React.ReactNode;
+  icon?: LucideIcon;
+  children: ReactNode;
 }
 
 function Field({ label, required, icon: Icon, children }: FieldProps) {
