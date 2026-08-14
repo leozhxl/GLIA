@@ -26,13 +26,13 @@ export const SPECIALTIES: Specialty[] = [
     icon: Brain,
     name: 'Psicologia',
     short: 'Avaliação e acompanhamento psicológico do desenvolvimento emocional, comportamental e social da criança e da família.',
-    when: 'Atendimento de 2 a 15 anos. Indicada para ansiedade, medos intensos, mudanças familiares, agressividade ou retraimento social.',
+    when: 'Atendimento de 2 a 16 anos e 11 meses. Indicada para dificuldades emocionais, comportamentais, sociais, questões familiares e relacionadas ao desenvolvimento.',
   },
   {
     icon: BrainCog,
     name: 'Neuropsicologia Infantil',
     short: 'Avaliação neuropsicológica com instrumentos padronizados (como WISC e SON-R), contribuindo para diagnósticos mais precisos.',
-    when: 'Atendimento de 2 a 15 anos. Necessária quando se investiga TDAH, dificuldades de atenção, memória ou aprendizagem.',
+    when: 'Atendimento de 2 a 16 anos e 11 meses. Indicada em investigações como TDAH, TEA, dificuldades de aprendizagem e alterações no desenvolvimento cognitivo.',
   },
   {
     icon: GraduationCap,

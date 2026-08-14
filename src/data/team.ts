@@ -25,8 +25,8 @@ export const TEAM: TeamMember[] = [
   {
     name: "Josiane Vargas",
     role: "Psicopedagoga · Neuropsicopedagoga · Terapeuta ABA",
-    credential: "Mestre pela UFSC",
-    bio: "Dedicada ao desenvolvimento das habilidades cognitivas, acadêmicas e funcionais da criança. Está em fase final da graduação em Terapia Ocupacional (conclusão prevista para outubro de 2026), ampliando sua atuação na promoção da autonomia, aprendizagem e participação funcional em diferentes contextos.",
+    credential: "Mestre em Educação pela UFSC",
+    bio: "Profissional dedicada à avaliação e ao desenvolvimento das habilidades cognitivas, acadêmicas e funcionais, com atuação voltada à aprendizagem, ao desenvolvimento e à promoção da autonomia. Atualmente, também é graduanda em Terapia Ocupacional, ampliando sua formação e integrando novos conhecimentos à prática clínica, com foco na autonomia, funcionalidade, aprendizagem e participação da criança nos diferentes contextos de vida. Sua atuação busca compreender cada criança de forma individualizada, considerando suas potencialidades, necessidades e os diferentes ambientes dos quais participa.",
     image: "/equipe-josiane-vargas.jpg",
   },
 ];
