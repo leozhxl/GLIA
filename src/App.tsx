@@ -51,11 +51,11 @@ function App() {
         <Hero />
         <TrustStrip />
         <KitFono />
+        <WhenToSeek />
         <ValueProp />
         <Specialties />
         <Process />
         <Team />
-        <WhenToSeek />
         <Testimonials />
         <FAQ />
         <FinalCTA />
