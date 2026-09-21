@@ -20,81 +20,61 @@ export function KitFono() {
         primeiros 50 compradores) ✨
       </div>
 
-      <div className="relative bg-gradient-to-r from-[#f8f5f5] via-[#f3ecec] to-[#ece1e0] px-4 pb-24 pt-16 sm:px-8 sm:pb-32 sm:pt-24 lg:pl-96">
-        <div className="pointer-events-none absolute right-[28rem] top-32 hidden w-[38rem] lg:block xl:w-[46rem]">
-          <img
-            src="/kit-fono.jpg"
-            alt="Fonoaudióloga segurando os documentos editáveis do Kit Fono"
-            width="912"
-            height="1146"
-            loading="lazy"
-            className="w-full"
-          />
-          <p className="mt-16 text-center font-display text-4xl leading-snug text-[#3f5636] xl:text-5xl">
-            Então esse kit foi criado
-            <br />
-            <span className="inline-block rounded-2xl bg-[#e3e9df] px-6 py-1">
-              para <em className="font-bold">você!</em>
-            </span>
-          </p>
-          <img
-            src="/kit-fono-modelos.jpeg"
-            alt="Exemplos dos documentos do Kit Fono em telas de celular"
-            width="531"
-            height="383"
-            loading="lazy"
-            className="mt-40 w-full rounded-3xl shadow-[0_10px_30px_rgba(63,86,54,0.2)]"
-          />
-          <a
-            href={createWhatsAppLink('Olá! Quero meu Kit Fono.')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-8 flex w-fit items-center rounded-full border-2 border-[#2f3f29] bg-[#3f5636] px-8 py-4 font-sans text-lg font-extrabold uppercase text-white shadow-[0_10px_20px_rgba(0,0,0,0.3)] transition-transform hover:scale-105 mx-auto"
-          >
-            Quero meu kit fono
-          </a>
-        </div>
-        <div data-reveal="zoom" className="max-w-5xl font-display text-[#3f5636]">
-          <p className="ml-2 text-6xl leading-none sm:text-7xl">
-            Fono na Prática,
-          </p>
-          <h2 className="mt-2 text-7xl font-normal leading-[1.05] sm:text-8xl">
-            Me formei, e agora ?
-          </h2>
-          <p className="-ml-2 mt-1 inline-block rounded-3xl bg-[#e3e9df] px-6 py-4 text-5xl font-bold italic leading-[1.05] sm:text-6xl">
-            documentos práticos, editáveis e<br />
-            profissionais
-          </p>
-        </div>
+      <div className="bg-gradient-to-r from-[#f8f5f5] via-[#f3ecec] to-[#ece1e0] px-4 pb-24 pt-16 sm:px-8 sm:pb-32 sm:pt-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+            <div className="font-display text-[#3f5636]">
+              <div data-reveal="zoom">
+                <p className="text-4xl leading-none sm:text-5xl lg:text-6xl">
+                  Fono na Prática,
+                </p>
+                <h2 className="mt-3 text-5xl font-normal leading-[1.05] sm:text-6xl lg:text-7xl">
+                  Me formei, e agora ?
+                </h2>
+                <p className="mt-4 inline-block rounded-3xl bg-[#e3e9df] px-6 py-4 text-3xl font-bold italic leading-[1.1] sm:text-4xl lg:text-5xl">
+                  documentos práticos, editáveis e profissionais
+                </p>
+              </div>
 
-        <div className="mt-10 flex max-w-5xl flex-col items-start lg:pl-80 font-display text-[#3f5636]">
-          <div className="w-full max-w-xs rounded-3xl bg-white px-6 py-4 text-center shadow-sm">
-            <p className="font-sans text-lg font-bold uppercase">
-              De <s className="text-red-500">R$97,00</s> por:
-            </p>
-            <p className="flex items-center justify-center gap-2 font-sans">
-              <span className="text-lg">10x</span>
-              <span className="text-6xl font-extrabold">R$7,99</span>
-            </p>
-            <p className="font-sans text-base">
-              ou <strong>R$79,90</strong> à vista.
-            </p>
+              <div className="mt-10 flex flex-col items-start">
+                <div className="w-full max-w-xs rounded-3xl bg-white px-6 py-4 text-center shadow-sm">
+                  <p className="font-sans text-lg font-bold uppercase">
+                    De <s className="text-red-500">R$97,00</s> por:
+                  </p>
+                  <p className="flex items-center justify-center gap-2 font-sans">
+                    <span className="text-lg">10x</span>
+                    <span className="text-6xl font-extrabold">R$7,99</span>
+                  </p>
+                  <p className="font-sans text-base">
+                    ou <strong>R$79,90</strong> à vista.
+                  </p>
+                </div>
+
+                <a
+                  href={createWhatsAppLink('Olá! Quero acessar o Kit Fono.')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-8 inline-block rounded-full border-2 border-[#2f3f29] bg-[#3f5636] px-8 py-4 font-sans text-lg font-extrabold uppercase text-white shadow-[0_10px_20px_rgba(0,0,0,0.3)] transition-transform hover:scale-105"
+                >
+                  Acessar o kit agora
+                </a>
+              </div>
+            </div>
+
+            <img
+              src="/kit-fono.jpg"
+              alt="Fonoaudióloga segurando os documentos editáveis do Kit Fono"
+              width="912"
+              height="1146"
+              className="mx-auto w-full max-w-xl rounded-[2rem] shadow-[0_20px_50px_rgba(63,86,54,0.2)]"
+            />
           </div>
 
-          <a
-            href={createWhatsAppLink('Olá! Quero acessar o Kit Fono.')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-10 inline-block rounded-full border-2 border-[#2f3f29] bg-[#3f5636] px-8 py-4 font-sans text-lg font-extrabold uppercase text-white shadow-[0_10px_20px_rgba(0,0,0,0.3)] transition-transform hover:scale-105"
-          >
-            Acessar o kit agora
-          </a>
-
-          <div className="mt-40 w-full max-w-4xl lg:-ml-80">
-            <h3 className="text-7xl leading-tight">
+          <div className="mx-auto mt-24 max-w-3xl font-display text-[#3f5636]">
+            <h3 className="text-5xl leading-tight sm:text-6xl">
               <em className="font-bold">Fono</em>, se você tem:
             </h3>
-            <ul className="mt-8 space-y-6 font-sans">
+            <ul className="mt-8 space-y-5 font-sans">
               {[
                 'Anotações desorganizadas',
                 'Medo de esquecer informações importantes na avaliação',
@@ -103,13 +83,39 @@ export function KitFono() {
               ].map((item) => (
                 <li
                   key={item}
-                  className="flex items-start gap-10 rounded-3xl border-4 border-[#8a8583] bg-[#f7f4f4] px-14 py-10 text-4xl leading-snug shadow-[0_8px_20px_rgba(0,0,0,0.12)]"
+                  className="flex items-start gap-6 rounded-3xl border-4 border-[#8a8583] bg-[#f7f4f4] px-8 py-6 text-2xl leading-snug shadow-[0_8px_20px_rgba(0,0,0,0.12)] sm:text-3xl"
                 >
-                  <span aria-hidden="true" className="text-5xl leading-none">✓</span>
+                  <span aria-hidden="true" className="text-4xl leading-none">✓</span>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
+          </div>
+
+          <div className="mx-auto mt-24 max-w-3xl text-center">
+            <p className="font-display text-4xl leading-snug text-[#3f5636] sm:text-5xl">
+              Então esse kit foi criado
+              <br />
+              <span className="inline-block rounded-2xl bg-[#e3e9df] px-6 py-1">
+                para <em className="font-bold">você!</em>
+              </span>
+            </p>
+            <img
+              src="/kit-fono-modelos.jpeg"
+              alt="Exemplos dos documentos do Kit Fono em telas de celular"
+              width="531"
+              height="383"
+              loading="lazy"
+              className="mt-10 w-full rounded-3xl shadow-[0_10px_30px_rgba(63,86,54,0.2)]"
+            />
+            <a
+              href={createWhatsAppLink('Olá! Quero meu Kit Fono.')}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-block rounded-full border-2 border-[#2f3f29] bg-[#3f5636] px-8 py-4 font-sans text-lg font-extrabold uppercase text-white shadow-[0_10px_20px_rgba(0,0,0,0.3)] transition-transform hover:scale-105"
+            >
+              Quero meu kit fono
+            </a>
           </div>
         </div>
       </div>
@@ -180,29 +186,14 @@ export function KitFono() {
 
       <Ebooks />
 
-      <div className="relative bg-gradient-to-r from-[#f8f5f5] via-[#f3ecec] to-[#e6d9d6] px-4 pb-24 pt-40 sm:px-8 sm:pb-32">
-        <img
-          src="/kit-fono-anamnese.png"
-          alt="Exemplo de anamnese do Kit Fono em tablet e celular"
-          width="510"
-          height="560"
-          loading="lazy"
-          className="pointer-events-none absolute right-[38rem] top-16 hidden w-[46rem] lg:block"
-        />
-        <img
-          src="/kit-fono-tablets.png"
-          alt="Exemplos de avaliação, lista de exercícios e instruções do Kit Fono em tablets"
-          width="656"
-          height="619"
-          loading="lazy"
-          className="pointer-events-none absolute right-[38rem] top-[66rem] hidden w-[53.5rem] lg:block"
-        />
-        <div className="relative max-w-6xl text-[#3f5636] lg:ml-24 xl:ml-[28rem]">
-          <h2 data-reveal="zoom" className="font-display text-6xl sm:text-7xl">
+      <div className="bg-gradient-to-r from-[#f8f5f5] via-[#f3ecec] to-[#e6d9d6] px-4 py-24 sm:px-8 sm:py-32">
+        <div className="mx-auto grid max-w-7xl items-start gap-16 lg:grid-cols-2">
+        <div className="text-[#3f5636]">
+          <h2 data-reveal="zoom" className="font-display text-5xl sm:text-6xl">
             <em className="font-bold">Dúvidas</em> frequentes:
           </h2>
 
-          <ol className="mt-12 max-w-2xl space-y-14">
+          <ol className="mt-12 space-y-12">
             {[
               {
                 n: '01',
@@ -273,10 +264,10 @@ export function KitFono() {
             ].map((item) => (
               <Fragment key={item.n}>
                 <li data-reveal="zoom" className="flex items-start gap-8">
-                  <span className="font-display text-8xl leading-none">{item.n}</span>
+                  <span className="font-display text-7xl leading-none">{item.n}</span>
                   <div>
-                    <h3 className="font-display text-5xl font-bold">{item.title}</h3>
-                    <p className="mt-2 font-sans text-2xl leading-relaxed">{item.body}</p>
+                    <h3 className="font-display text-3xl font-bold sm:text-4xl">{item.title}</h3>
+                    <p className="mt-2 font-sans text-xl leading-relaxed">{item.body}</p>
                   </div>
                 </li>
                 {item.n === '03' && (
@@ -303,6 +294,26 @@ export function KitFono() {
           >
             Acesso imediato aqui
           </a>
+        </div>
+
+        <div className="space-y-10">
+          <img
+            src="/kit-fono-anamnese.png"
+            alt="Exemplo de anamnese do Kit Fono em tablet e celular"
+            width="510"
+            height="560"
+            loading="lazy"
+            className="mx-auto w-full max-w-xl"
+          />
+          <img
+            src="/kit-fono-tablets.png"
+            alt="Exemplos de avaliação, lista de exercícios e instruções do Kit Fono em tablets"
+            width="656"
+            height="619"
+            loading="lazy"
+            className="mx-auto w-full max-w-xl"
+          />
+        </div>
         </div>
       </div>
 
