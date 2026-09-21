@@ -20,18 +20,18 @@ export function KitFono() {
         primeiros 50 compradores) ✨
       </div>
 
-      <div className="bg-gradient-to-r from-[#f8f5f5] via-[#f3ecec] to-[#ece1e0] px-4 pb-24 pt-16 sm:px-8 sm:pb-32 sm:pt-24">
-        <div className="mx-auto max-w-7xl">
+      <div className="bg-gradient-to-r from-[#f8f5f5] via-[#f3ecec] to-[#ece1e0] px-4 pb-14 pt-10 sm:px-8 sm:pb-20 sm:pt-14">
+        <div className="mx-auto max-w-6xl">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="font-display text-[#3f5636]">
               <div data-reveal="zoom">
-                <p className="text-4xl leading-none sm:text-5xl lg:text-6xl">
+                <p className="text-2xl leading-none sm:text-3xl lg:text-4xl">
                   Fono na Prática,
                 </p>
-                <h2 className="mt-3 text-5xl font-normal leading-[1.05] sm:text-6xl lg:text-7xl">
+                <h2 className="mt-3 text-3xl font-normal leading-[1.05] sm:text-4xl lg:text-5xl">
                   Me formei, e agora ?
                 </h2>
-                <p className="mt-4 inline-block rounded-3xl bg-[#e3e9df] px-6 py-4 text-3xl font-bold italic leading-[1.1] sm:text-4xl lg:text-5xl">
+                <p className="mt-4 inline-block rounded-3xl bg-[#e3e9df] px-6 py-4 text-xl font-bold italic leading-[1.1] sm:text-2xl lg:text-3xl">
                   documentos práticos, editáveis e profissionais
                 </p>
               </div>
@@ -43,7 +43,7 @@ export function KitFono() {
                   </p>
                   <p className="flex items-center justify-center gap-2 font-sans">
                     <span className="text-lg">10x</span>
-                    <span className="text-6xl font-extrabold">R$7,99</span>
+                    <span className="text-4xl font-extrabold">R$7,99</span>
                   </p>
                   <p className="font-sans text-base">
                     ou <strong>R$79,90</strong> à vista.
@@ -67,10 +67,10 @@ export function KitFono() {
                 alt="Fonoaudióloga segurando os documentos editáveis do Kit Fono"
                 width="912"
                 height="1146"
-                className="mx-auto w-full max-w-xl rounded-[2rem] shadow-[0_20px_50px_rgba(63,86,54,0.2)]"
+                className="mx-auto w-full max-w-md rounded-[2rem] shadow-[0_20px_50px_rgba(63,86,54,0.2)]"
               />
           <div className="mt-12 text-center">
-            <p className="font-display text-4xl leading-snug text-[#3f5636] sm:text-5xl">
+            <p className="font-display text-2xl leading-snug text-[#3f5636] sm:text-3xl">
               Então esse kit foi criado
               <br />
               <span className="inline-block rounded-2xl bg-[#e3e9df] px-6 py-1">
@@ -97,8 +97,8 @@ export function KitFono() {
             </div>
           </div>
 
-          <div className="mt-24 max-w-3xl font-display text-[#3f5636]">
-            <h3 className="text-5xl leading-tight sm:text-6xl">
+          <div className="mt-14 max-w-3xl font-display text-[#3f5636]">
+            <h3 className="text-3xl leading-tight sm:text-4xl">
               <em className="font-bold">Fono</em>, se você tem:
             </h3>
             <ul className="mt-8 space-y-5 font-sans">
@@ -110,9 +110,9 @@ export function KitFono() {
               ].map((item) => (
                 <li
                   key={item}
-                  className="flex items-start gap-6 rounded-3xl border-4 border-[#8a8583] bg-[#f7f4f4] px-8 py-6 text-2xl leading-snug shadow-[0_8px_20px_rgba(0,0,0,0.12)] sm:text-3xl"
+                  className="flex items-start gap-6 rounded-3xl border-4 border-[#8a8583] bg-[#f7f4f4] px-8 py-6 text-xl leading-snug shadow-[0_8px_20px_rgba(0,0,0,0.12)] sm:text-xl"
                 >
-                  <span aria-hidden="true" className="text-4xl leading-none">✓</span>
+                  <span aria-hidden="true" className="text-2xl leading-none">✓</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -121,16 +121,16 @@ export function KitFono() {
         </div>
       </div>
 
-      <div className="relative bg-gradient-to-r from-[#f8f5f5] via-[#f3ecec] to-[#ece1e0] px-4 pb-24 sm:px-8 sm:pb-32">
+      <div className="relative bg-gradient-to-r from-[#f8f5f5] via-[#f3ecec] to-[#ece1e0] px-4 pb-14 sm:px-8 sm:pb-20">
         <div className="pointer-events-none absolute -right-24 top-10 h-96 w-96 rounded-full bg-[#3f5636]/10 blur-3xl" />
         <div className="relative mx-auto max-w-5xl text-[#3f5636]">
           <div data-reveal="zoom">
-            <h2 className="font-display text-6xl leading-[1.05] sm:text-7xl">
+            <h2 className="font-display text-4xl leading-[1.05] sm:text-5xl">
               O que é o
               <br />
               <em className="font-extrabold">KIT FONO</em>?
             </h2>
-            <p className="mt-6 max-w-3xl text-justify font-sans text-lg leading-relaxed sm:text-xl">
+            <p className="mt-6 max-w-3xl text-justify font-sans text-lg leading-relaxed sm:text-lg">
               Um material pensado para facilitar sua rotina clínica e deixar seus
               atendimentos mais estruturados, seguros e profissionais:{' '}
               <strong>+70 documentos totalmente editáveis no Canva</strong> que
@@ -145,10 +145,10 @@ export function KitFono() {
               data-reveal="zoom"
               className="group rounded-3xl border border-white/70 bg-white/60 p-8 shadow-[0_10px_30px_rgba(63,86,54,0.12)] backdrop-blur transition duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(63,86,54,0.25)]"
             >
-              <p className="bg-gradient-to-r from-[#3f5636] to-[#7a9a6d] bg-clip-text font-display text-8xl leading-none text-transparent transition-transform duration-300 group-hover:scale-105">
+              <p className="bg-gradient-to-r from-[#3f5636] to-[#7a9a6d] bg-clip-text font-display text-6xl leading-none text-transparent transition-transform duration-300 group-hover:scale-105">
                 +70
               </p>
-              <h3 className="mt-4 font-display text-3xl font-bold">
+              <h3 className="mt-4 font-display text-xl font-bold">
                 Documentos editáveis
               </h3>
               <p className="mt-3 font-sans text-lg leading-relaxed">
@@ -162,7 +162,7 @@ export function KitFono() {
               data-reveal="zoom"
               className="group rounded-3xl bg-gradient-to-br from-[#3f5636] to-[#54705a] p-8 text-white shadow-[0_10px_30px_rgba(63,86,54,0.3)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(63,86,54,0.45)]"
             >
-              <p className="font-display text-6xl leading-none sm:text-7xl">
+              <p className="font-display text-4xl leading-none sm:text-5xl">
                 + BÔNUS
               </p>
               <ul className="mt-6 space-y-4 font-sans text-lg">
@@ -187,14 +187,14 @@ export function KitFono() {
 
       <Ebooks />
 
-      <div className="bg-gradient-to-r from-[#f8f5f5] via-[#f3ecec] to-[#e6d9d6] px-4 py-24 sm:px-8 sm:py-32">
-        <div className="mx-auto grid max-w-7xl items-start gap-16 lg:grid-cols-2">
+      <div className="bg-gradient-to-r from-[#f8f5f5] via-[#f3ecec] to-[#e6d9d6] px-4 py-14 sm:px-8 sm:py-20">
+        <div className="mx-auto grid max-w-6xl items-start gap-10 lg:grid-cols-2">
         <div className="text-[#3f5636]">
-          <h2 data-reveal="zoom" className="font-display text-5xl sm:text-6xl">
+          <h2 data-reveal="zoom" className="font-display text-3xl sm:text-4xl">
             <em className="font-bold">Dúvidas</em> frequentes:
           </h2>
 
-          <ol className="mt-12 space-y-12">
+          <ol className="mt-12 space-y-8">
             {[
               {
                 n: '01',
@@ -265,10 +265,10 @@ export function KitFono() {
             ].map((item) => (
               <Fragment key={item.n}>
                 <li data-reveal="zoom" className="flex items-start gap-8">
-                  <span className="font-display text-7xl leading-none">{item.n}</span>
+                  <span className="font-display text-5xl leading-none">{item.n}</span>
                   <div>
-                    <h3 className="font-display text-3xl font-bold sm:text-4xl">{item.title}</h3>
-                    <p className="mt-2 font-sans text-xl leading-relaxed">{item.body}</p>
+                    <h3 className="font-display text-xl font-bold sm:text-2xl">{item.title}</h3>
+                    <p className="mt-2 font-sans text-lg leading-relaxed">{item.body}</p>
                   </div>
                 </li>
                 {item.n === '03' && (
@@ -304,7 +304,7 @@ export function KitFono() {
             width="510"
             height="560"
             loading="lazy"
-            className="mx-auto w-full max-w-xl"
+            className="mx-auto w-full max-w-md"
           />
           <img
             src="/kit-fono-tablets.png"
@@ -312,21 +312,21 @@ export function KitFono() {
             width="656"
             height="619"
             loading="lazy"
-            className="mx-auto w-full max-w-xl"
+            className="mx-auto w-full max-w-md"
           />
         </div>
         </div>
       </div>
 
-      <div className="relative z-10 bg-gradient-to-r from-[#f1eded] via-[#e9dfdd] to-[#dccdc9] px-4 py-24 sm:px-8 sm:py-32">
-        <div className="mx-auto max-w-7xl text-[#1f2a1c]">
+      <div className="relative z-10 bg-gradient-to-r from-[#f1eded] via-[#e9dfdd] to-[#dccdc9] px-4 py-14 sm:px-8 sm:py-20">
+        <div className="mx-auto max-w-6xl text-[#1f2a1c]">
           <div data-reveal="zoom" className="text-center text-[#3f5636]">
-            <h2 className="font-sans text-5xl font-extrabold italic leading-tight sm:text-7xl">
+            <h2 className="font-sans text-3xl font-extrabold italic leading-tight sm:text-5xl">
               O que quem comprou
               <br />
               está dizendo?
             </h2>
-            <p className="mt-3 font-sans text-2xl">Depoimentos reais!</p>
+            <p className="mt-3 font-sans text-xl">Depoimentos reais!</p>
           </div>
 
           <div className="mt-16 gap-8 lg:columns-2">
@@ -334,7 +334,7 @@ export function KitFono() {
               <figure
                 key={i}
                 data-reveal="zoom"
-                className="mb-8 break-inside-avoid rounded-3xl bg-[#f1f4f4] p-8 font-sans text-xl leading-relaxed shadow-[0_8px_24px_rgba(63,86,54,0.12)]"
+                className="mb-8 break-inside-avoid rounded-3xl bg-[#f1f4f4] p-8 font-sans text-lg leading-relaxed shadow-[0_8px_24px_rgba(63,86,54,0.12)]"
               >
                 {text.split('\n').map((line, j) => (
                   <p key={j} className={line ? 'mt-2 first:mt-0' : 'h-3'}>
@@ -350,7 +350,7 @@ export function KitFono() {
               href={createWhatsAppLink('Olá! Quero fazer parte e adquirir o Kit Fono.')}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block rounded-full border-2 border-[#2f3f29] bg-[#3f5636] px-12 py-5 font-sans text-2xl font-extrabold uppercase text-white shadow-[0_10px_20px_rgba(0,0,0,0.3)] transition-transform hover:scale-105"
+              className="inline-block rounded-full border-2 border-[#2f3f29] bg-[#3f5636] px-12 py-5 font-sans text-xl font-extrabold uppercase text-white shadow-[0_10px_20px_rgba(0,0,0,0.3)] transition-transform hover:scale-105"
             >
               Quero fazer parte
             </a>

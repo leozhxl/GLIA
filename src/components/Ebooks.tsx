@@ -7,7 +7,7 @@ export function Ebooks() {
       className="section-anchor-offset bg-gradient-to-r from-[#f8f5f5] via-[#f3ecec] to-[#ece1e0] px-4 py-20 sm:px-8 sm:py-28"
     >
       <div className="mx-auto max-w-7xl text-[#3f5636]">
-        <h2 data-reveal="zoom" className="text-center font-display text-5xl sm:text-6xl">
+        <h2 data-reveal="zoom" className="text-center font-display text-4xl sm:text-5xl">
           Nossos <em className="font-bold">e-books</em>
         </h2>
 
