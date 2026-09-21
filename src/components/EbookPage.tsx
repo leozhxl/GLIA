@@ -42,7 +42,7 @@ export function EbookPage({ slug }: { slug: string }) {
                 <img
                   src={ebook.image}
                   alt={ebook.title}
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                 />
               ) : null}
             </div>

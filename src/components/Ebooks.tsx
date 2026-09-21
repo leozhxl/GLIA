@@ -25,7 +25,7 @@ export function Ebooks() {
                     src={ebook.image}
                     alt={ebook.title}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
                   />
                 ) : (
                   <div className="grid h-full place-items-center font-display text-6xl text-[#3f5636]/40">

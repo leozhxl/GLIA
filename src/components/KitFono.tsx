@@ -51,7 +51,7 @@ export function KitFono() {
                 </div>
 
                 <a
-                  href={createWhatsAppLink('Olá! Quero acessar o Fono na Prática.')}
+                  href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-fono-na-pratica-8ncmh/F107708482E"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-8 inline-block rounded-full border-2 border-[#2f3f29] bg-[#3f5636] px-8 py-4 font-sans text-lg font-extrabold uppercase text-white shadow-[0_10px_20px_rgba(0,0,0,0.3)] transition-transform hover:scale-105"
@@ -111,7 +111,7 @@ export function KitFono() {
               className="mt-10 w-full rounded-3xl shadow-[0_10px_30px_rgba(63,86,54,0.2)]"
             />
             <a
-              href={createWhatsAppLink('Olá! Quero meu Fono na Prática.')}
+              href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-fono-na-pratica-8ncmh/F107708482E"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-8 inline-block rounded-full border-2 border-[#2f3f29] bg-[#3f5636] px-8 py-4 font-sans text-lg font-extrabold uppercase text-white shadow-[0_10px_20px_rgba(0,0,0,0.3)] transition-transform hover:scale-105"
@@ -276,7 +276,7 @@ export function KitFono() {
                 {item.n === '03' && (
                   <li>
                     <a
-                      href={createWhatsAppLink('Olá! Quero acesso imediato ao Fono na Prática.')}
+                      href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-fono-na-pratica-8ncmh/F107708482E"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block rounded-full border-2 border-[#2f3f29] bg-[#3f5636] px-8 py-4 font-sans text-lg font-extrabold uppercase text-white shadow-[0_10px_20px_rgba(0,0,0,0.3)] transition-transform hover:scale-105"
@@ -290,7 +290,7 @@ export function KitFono() {
           </ol>
 
           <a
-            href={createWhatsAppLink('Olá! Quero acesso imediato ao Fono na Prática.')}
+            href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-fono-na-pratica-8ncmh/F107708482E"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-12 inline-block rounded-full border-2 border-[#2f3f29] bg-[#3f5636] px-8 py-4 font-sans text-lg font-extrabold uppercase text-white shadow-[0_10px_20px_rgba(0,0,0,0.3)] transition-transform hover:scale-105"
