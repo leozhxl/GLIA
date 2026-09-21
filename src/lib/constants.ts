@@ -14,11 +14,11 @@ export const whatsappLink = CLINIC.whatsapp;
 
 export const NAV_LINKS = [
   { label: 'Início', href: '#top' },
+  { label: 'Fono na Prática', href: '#kit-fono' },
   { label: 'Sobre', href: '#sobre' },
   { label: 'Especialidades', href: '#especialidades' },
   { label: 'Como funciona', href: '#como-funciona' },
   { label: 'Equipe', href: '#equipe' },
-  { label: 'Fono na Prática', href: '#kit-fono' },
   { label: 'Contato', href: '#contato' },
 ] as const;
 

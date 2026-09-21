@@ -50,12 +50,12 @@ function App() {
       <main id="conteudo" hidden={Boolean(ebookSlug)}>
         <Hero />
         <TrustStrip />
-        <WhenToSeek />
+        <KitFono />
         <ValueProp />
         <Specialties />
         <Process />
         <Team />
-        <KitFono />
+        <WhenToSeek />
         <Testimonials />
         <FAQ />
         <FinalCTA />
