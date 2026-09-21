@@ -61,38 +61,15 @@ export function KitFono() {
               </div>
             </div>
 
-            <img
-              src="/kit-fono.jpg"
-              alt="Fonoaudióloga segurando os documentos editáveis do Kit Fono"
-              width="912"
-              height="1146"
-              className="mx-auto w-full max-w-xl rounded-[2rem] shadow-[0_20px_50px_rgba(63,86,54,0.2)]"
-            />
-          </div>
-
-          <div className="mx-auto mt-24 max-w-3xl font-display text-[#3f5636]">
-            <h3 className="text-5xl leading-tight sm:text-6xl">
-              <em className="font-bold">Fono</em>, se você tem:
-            </h3>
-            <ul className="mt-8 space-y-5 font-sans">
-              {[
-                'Anotações desorganizadas',
-                'Medo de esquecer informações importantes na avaliação',
-                'Insegurança para montar documentos do zero',
-                'Vontade de já se preparar melhor para iniciar os atendimentos, mesmo na graduação',
-              ].map((item) => (
-                <li
-                  key={item}
-                  className="flex items-start gap-6 rounded-3xl border-4 border-[#8a8583] bg-[#f7f4f4] px-8 py-6 text-2xl leading-snug shadow-[0_8px_20px_rgba(0,0,0,0.12)] sm:text-3xl"
-                >
-                  <span aria-hidden="true" className="text-4xl leading-none">✓</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="mx-auto mt-24 max-w-3xl text-center">
+            <div>
+              <img
+                src="/kit-fono.jpg"
+                alt="Fonoaudióloga segurando os documentos editáveis do Kit Fono"
+                width="912"
+                height="1146"
+                className="mx-auto w-full max-w-xl rounded-[2rem] shadow-[0_20px_50px_rgba(63,86,54,0.2)]"
+              />
+          <div className="mt-12 text-center">
             <p className="font-display text-4xl leading-snug text-[#3f5636] sm:text-5xl">
               Então esse kit foi criado
               <br />
@@ -116,6 +93,30 @@ export function KitFono() {
             >
               Quero meu kit fono
             </a>
+          </div>
+            </div>
+          </div>
+
+          <div className="mt-24 max-w-3xl font-display text-[#3f5636]">
+            <h3 className="text-5xl leading-tight sm:text-6xl">
+              <em className="font-bold">Fono</em>, se você tem:
+            </h3>
+            <ul className="mt-8 space-y-5 font-sans">
+              {[
+                'Anotações desorganizadas',
+                'Medo de esquecer informações importantes na avaliação',
+                'Insegurança para montar documentos do zero',
+                'Vontade de já se preparar melhor para iniciar os atendimentos, mesmo na graduação',
+              ].map((item) => (
+                <li
+                  key={item}
+                  className="flex items-start gap-6 rounded-3xl border-4 border-[#8a8583] bg-[#f7f4f4] px-8 py-6 text-2xl leading-snug shadow-[0_8px_20px_rgba(0,0,0,0.12)] sm:text-3xl"
+                >
+                  <span aria-hidden="true" className="text-4xl leading-none">✓</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
