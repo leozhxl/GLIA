@@ -22,7 +22,7 @@ export function KitFono() {
 
       <div className="bg-gradient-to-r from-[#f8f5f5] via-[#f3ecec] to-[#ece1e0] px-4 pb-14 pt-10 sm:px-8 sm:pb-20 sm:pt-14">
         <div className="mx-auto max-w-6xl">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
+          <div className="grid items-start gap-12 lg:grid-cols-2">
             <div className="font-display text-[#3f5636]">
               <div data-reveal="zoom">
                 <p className="text-2xl leading-none sm:text-3xl lg:text-4xl">
@@ -69,7 +69,32 @@ export function KitFono() {
                 height="1146"
                 className="mx-auto w-full max-w-md rounded-[2rem] shadow-[0_20px_50px_rgba(63,86,54,0.2)]"
               />
-          <div className="mt-12 text-center">
+            </div>
+          </div>
+
+          <div className="mt-14 grid items-center gap-10 lg:grid-cols-2">
+          <div className="font-display text-[#3f5636]">
+            <h3 className="text-3xl leading-tight sm:text-4xl">
+              <em className="font-bold">Fono</em>, se você tem:
+            </h3>
+            <ul className="mt-8 space-y-5 font-sans">
+              {[
+                'Anotações desorganizadas',
+                'Medo de esquecer informações importantes na avaliação',
+                'Insegurança para montar documentos do zero',
+                'Vontade de já se preparar melhor para iniciar os atendimentos, mesmo na graduação',
+              ].map((item) => (
+                <li
+                  key={item}
+                  className="flex items-start gap-6 rounded-3xl border-4 border-[#8a8583] bg-[#f7f4f4] px-8 py-6 text-xl leading-snug shadow-[0_8px_20px_rgba(0,0,0,0.12)] sm:text-xl"
+                >
+                  <span aria-hidden="true" className="text-2xl leading-none">✓</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="text-center">
             <p className="font-display text-2xl leading-snug text-[#3f5636] sm:text-3xl">
               Então esse kit foi criado
               <br />
@@ -94,29 +119,6 @@ export function KitFono() {
               Quero meu kit fono
             </a>
           </div>
-            </div>
-          </div>
-
-          <div className="mt-14 max-w-3xl font-display text-[#3f5636]">
-            <h3 className="text-3xl leading-tight sm:text-4xl">
-              <em className="font-bold">Fono</em>, se você tem:
-            </h3>
-            <ul className="mt-8 space-y-5 font-sans">
-              {[
-                'Anotações desorganizadas',
-                'Medo de esquecer informações importantes na avaliação',
-                'Insegurança para montar documentos do zero',
-                'Vontade de já se preparar melhor para iniciar os atendimentos, mesmo na graduação',
-              ].map((item) => (
-                <li
-                  key={item}
-                  className="flex items-start gap-6 rounded-3xl border-4 border-[#8a8583] bg-[#f7f4f4] px-8 py-6 text-xl leading-snug shadow-[0_8px_20px_rgba(0,0,0,0.12)] sm:text-xl"
-                >
-                  <span aria-hidden="true" className="text-2xl leading-none">✓</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
       </div>
