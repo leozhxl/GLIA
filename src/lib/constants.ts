@@ -18,7 +18,7 @@ export const NAV_LINKS = [
   { label: 'Especialidades', href: '#especialidades' },
   { label: 'Como funciona', href: '#como-funciona' },
   { label: 'Equipe', href: '#equipe' },
-  { label: 'Kit Fono', href: '#kit-fono' },
+  { label: 'Fono na Prática', href: '#kit-fono' },
   { label: 'Contato', href: '#contato' },
 ] as const;
 

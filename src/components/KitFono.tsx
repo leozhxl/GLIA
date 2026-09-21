@@ -16,7 +16,7 @@ export function KitFono() {
   return (
     <section id="kit-fono" className="section-anchor-offset relative overflow-hidden">
       <div className="bg-gradient-to-r from-[#3f5636] to-[#54705a] px-4 py-2 text-center text-xs text-white sm:px-8 sm:text-sm">
-        ✨ Kit Fono por apenas <strong className="font-bold">R$79,90</strong> (para os
+        ✨ Fono na Prática por apenas <strong className="font-bold">R$79,90</strong> (para os
         primeiros 50 compradores) ✨
       </div>
 
@@ -51,7 +51,7 @@ export function KitFono() {
                 </div>
 
                 <a
-                  href={createWhatsAppLink('Olá! Quero acessar o Kit Fono.')}
+                  href={createWhatsAppLink('Olá! Quero acessar o Fono na Prática.')}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-8 inline-block rounded-full border-2 border-[#2f3f29] bg-[#3f5636] px-8 py-4 font-sans text-lg font-extrabold uppercase text-white shadow-[0_10px_20px_rgba(0,0,0,0.3)] transition-transform hover:scale-105"
@@ -64,7 +64,7 @@ export function KitFono() {
             <div>
               <img
                 src="/kit-fono.jpg"
-                alt="Fonoaudióloga segurando os documentos editáveis do Kit Fono"
+                alt="Fonoaudióloga segurando os documentos editáveis do Fono na Prática"
                 width="912"
                 height="1146"
                 className="mx-auto w-full max-w-md rounded-[2rem] shadow-[0_20px_50px_rgba(63,86,54,0.2)]"
@@ -104,19 +104,19 @@ export function KitFono() {
             </p>
             <img
               src="/kit-fono-modelos.jpeg"
-              alt="Exemplos dos documentos do Kit Fono em telas de celular"
+              alt="Exemplos dos documentos do Fono na Prática em telas de celular"
               width="531"
               height="383"
               loading="lazy"
               className="mt-10 w-full rounded-3xl shadow-[0_10px_30px_rgba(63,86,54,0.2)]"
             />
             <a
-              href={createWhatsAppLink('Olá! Quero meu Kit Fono.')}
+              href={createWhatsAppLink('Olá! Quero meu Fono na Prática.')}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-8 inline-block rounded-full border-2 border-[#2f3f29] bg-[#3f5636] px-8 py-4 font-sans text-lg font-extrabold uppercase text-white shadow-[0_10px_20px_rgba(0,0,0,0.3)] transition-transform hover:scale-105"
             >
-              Quero meu kit fono
+              Quero meu Fono na Prática
             </a>
           </div>
           </div>
@@ -130,7 +130,7 @@ export function KitFono() {
             <h2 className="font-display text-4xl leading-[1.05] sm:text-5xl">
               O que é o
               <br />
-              <em className="font-extrabold">KIT FONO</em>?
+              <em className="font-extrabold">FONO NA PRÁTICA</em>?
             </h2>
             <p className="mt-6 max-w-3xl text-justify font-sans text-lg leading-relaxed sm:text-lg">
               Um material pensado para facilitar sua rotina clínica e deixar seus
@@ -214,9 +214,9 @@ export function KitFono() {
                 title: 'O acesso é imediato?',
                 body: (
                   <>
-                    Após a compra, entre na sua conta da <strong>Kiwify</strong> com o
+                    Após a compra, entre na sua conta da <strong>Hotmart</strong> com o
                     mesmo e-mail utilizado no pagamento e acesse a aba{' '}
-                    <strong>“Meus produtos”</strong>. O Kit Fono ficará disponível ali
+                    <strong>“Meus produtos”</strong>. O Fono na Prática ficará disponível ali
                     sempre que precisar.
                   </>
                 ),
@@ -259,7 +259,7 @@ export function KitFono() {
                 title: 'O acesso é vitalício?',
                 body: (
                   <>
-                    Sim! Após a compra você terá acesso ao Kit Fono de forma
+                    Sim! Após a compra você terá acesso ao Fono na Prática de forma
                     vitalícia, mesmo quando houver atualizações.
                   </>
                 ),
@@ -276,7 +276,7 @@ export function KitFono() {
                 {item.n === '03' && (
                   <li>
                     <a
-                      href={createWhatsAppLink('Olá! Quero acesso imediato ao Kit Fono.')}
+                      href={createWhatsAppLink('Olá! Quero acesso imediato ao Fono na Prática.')}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block rounded-full border-2 border-[#2f3f29] bg-[#3f5636] px-8 py-4 font-sans text-lg font-extrabold uppercase text-white shadow-[0_10px_20px_rgba(0,0,0,0.3)] transition-transform hover:scale-105"
@@ -290,7 +290,7 @@ export function KitFono() {
           </ol>
 
           <a
-            href={createWhatsAppLink('Olá! Quero acesso imediato ao Kit Fono.')}
+            href={createWhatsAppLink('Olá! Quero acesso imediato ao Fono na Prática.')}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-12 inline-block rounded-full border-2 border-[#2f3f29] bg-[#3f5636] px-8 py-4 font-sans text-lg font-extrabold uppercase text-white shadow-[0_10px_20px_rgba(0,0,0,0.3)] transition-transform hover:scale-105"
@@ -302,7 +302,7 @@ export function KitFono() {
         <div className="space-y-10">
           <img
             src="/kit-fono-anamnese.png"
-            alt="Exemplo de anamnese do Kit Fono em tablet e celular"
+            alt="Exemplo de anamnese do Fono na Prática em tablet e celular"
             width="510"
             height="560"
             loading="lazy"
@@ -310,7 +310,7 @@ export function KitFono() {
           />
           <img
             src="/kit-fono-tablets.png"
-            alt="Exemplos de avaliação, lista de exercícios e instruções do Kit Fono em tablets"
+            alt="Exemplos de avaliação, lista de exercícios e instruções do Fono na Prática em tablets"
             width="656"
             height="619"
             loading="lazy"
@@ -349,7 +349,7 @@ export function KitFono() {
 
           <div className="mt-8 flex justify-center">
             <a
-              href={createWhatsAppLink('Olá! Quero fazer parte e adquirir o Kit Fono.')}
+              href={createWhatsAppLink('Olá! Quero fazer parte e adquirir o Fono na Prática.')}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block rounded-full border-2 border-[#2f3f29] bg-[#3f5636] px-12 py-5 font-sans text-xl font-extrabold uppercase text-white shadow-[0_10px_20px_rgba(0,0,0,0.3)] transition-transform hover:scale-105"
