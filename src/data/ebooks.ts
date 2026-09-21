@@ -130,10 +130,14 @@ export const EBOOKS: Ebook[] = [
     links: [{ label: 'Comprar agora', href: 'https://go.hotmart.com/N106487452U' }],
     image: '/ebook-desfralde-consciente.jpeg',
   },
-  {
-    slug: 'ebook-12',
-    title: 'Nome do e-book 12',
-    description: 'Descrição curta do e-book.',
-    price: 'R$ 00,00',
-  },
+  // Próximo produto: copie este modelo, descomente e preencha.
+  // {
+  //   slug: 'nome-sem-espacos',
+  //   title: 'Nome do produto',
+  //   description: 'Descrição curta exibida no card.',
+  //   longDescription: 'Descrição completa da página do produto.',
+  //   price: 'R$ 00,00',
+  //   image: '/ebook-nome.jpeg',
+  //   links: [{ label: 'Comprar agora', href: 'https://go.hotmart.com/...' }],
+  // },
 ];
