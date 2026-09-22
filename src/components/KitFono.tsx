@@ -17,16 +17,6 @@ import { SectionDivider } from './SectionDivider';
 const HOTMART_LINK =
   'https://hotmart.com/pt-br/marketplace/produtos/hagsxd-fono-na-pratica-8ncmh/F107708482E';
 
-const TESTIMONIALS = [
-  'O material ficou muito bom! Bem completo, e vai facilitar bastante no dia a dia, principalmente em algumas demandas em específico. O fato de ser direcionado para o Canva facilita demaaais na hora de editar, eu amei muito 🥹 você arrasou, sucesso ❤️',
-  'oiiie, eu ameiii, simplesmente perfeito!!! 💖💖💖',
-  'Só me formo no final do ano mas já quis garantir logoooo hahahaha💕 💕 💕\nMaravilhosaaa! Mt obrigada',
-  'Oii queridaaa! Já dei uma espiada e adorei! Sou muito chata com organização e tava precisando de um norte! Obrigada pelo contato e pela disponibilidade 💗',
-  'Simplesmente perfeito o kit fono, sem dúvida, não me arrependo do investimento!\nComo uma quase fono (formando bem pertinho já), me ajudou bastante e vai ser muito eficaz para os atendimentos.\nClaro que seus vídeos também refletem muito em aprendizado e conhecimento para nós. Continue nesse trabalho lindo.\nAssim como me inspirou como acadêmica e quase fono formada, tenho certeza que irá inspirar outras pessoas com tamanho profissionalismo e dedicação, além de sua energia contagiante!! ✨ 💗',
-  'Amei o material, maravilhoso, tenho certeza que vai me ajudar muito ❤️',
-  'Bom dia amiga.\nPassando para dar um feedback do Kit Fono. Achei simplesmente maravilhoso. Realmente é um material para facilitar nossa rotina. São documentos prontos e é totalmente editáveis. Além de lindos!! Achei a estética minimalista e chique.\nCom certeza eu irei utilizar muito. Estou impressionada com a praticidade.\n\nEu indico de olhos fechados, um kit essencial para os profissionais que tem a rotina cheia, e querem entregar documentos com uma boa apresentação!!',
-];
-
 const DORES = [
   'O que eu preciso organizar primeiro?',
   'Como controlar meu financeiro?',
@@ -414,33 +404,13 @@ export function KitFono() {
         </div>
       </div>
 
-      {/* 11. CTA final + depoimentos */}
+      {/* 11. CTA final */}
       <div className="relative overflow-hidden bg-glia-900 px-4 py-20 text-white sm:px-8 sm:py-28">
-        <div className="mx-auto max-w-6xl">
-          <div data-reveal="zoom" className="mx-auto max-w-2xl text-center">
-            <h2 className="text-balance font-display text-3xl font-extrabold sm:text-4xl">
-              O que quem comprou está dizendo?
-            </h2>
-            <p className="mt-3 text-lg text-glia-300">Depoimentos reais!</p>
-          </div>
-
-          <div className="mt-16 gap-6 lg:columns-2">
-            {TESTIMONIALS.map((text, i) => (
-              <figure
-                key={i}
-                data-reveal="zoom"
-                className="mb-6 break-inside-avoid rounded-2xl bg-white/[0.05] p-7 text-base leading-relaxed text-glia-200 ring-1 ring-white/10"
-              >
-                {text.split('\n').map((line, j) => (
-                  <p key={j} className={line ? 'mt-2 first:mt-0' : 'h-3'}>
-                    {line}
-                  </p>
-                ))}
-              </figure>
-            ))}
-          </div>
-
-          <div className="mt-8 flex justify-center">
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 data-reveal="zoom" className="text-balance font-display text-3xl font-extrabold sm:text-4xl">
+            Pronta para dar o próximo passo?
+          </h2>
+          <div data-reveal className="mt-8 flex justify-center">
             <a
               href={createWhatsAppLink('Olá! Quero fazer parte e adquirir o Fono na Prática.')}
               target="_blank"
