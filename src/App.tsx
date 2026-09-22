@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { EbookPage } from '@/components/EbookPage';
+import { MaintenancePage } from '@/components/MaintenancePage';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { TrustStrip } from '@/components/TrustStrip';
@@ -20,8 +21,12 @@ function getEbookSlug() {
   return match ? decodeURIComponent(match[1]) : null;
 }
 
+// Site em manutenção até esta data (inclusive). Remova este bloqueio para reativar antes.
+const MAINTENANCE_UNTIL = new Date('2026-09-27T00:00:00-03:00');
+
 function App() {
   const [ebookSlug, setEbookSlug] = useState(getEbookSlug);
+  const inMaintenance = Date.now() < MAINTENANCE_UNTIL.getTime();
 
   useEffect(() => {
     const onHashChange = () => {
@@ -38,6 +43,10 @@ function App() {
     const id = window.location.hash.slice(1);
     if (id) document.getElementById(id)?.scrollIntoView();
   }, [ebookSlug]);
+
+  if (inMaintenance) {
+    return <MaintenancePage />;
+  }
 
   return (
     <div className="min-h-screen overflow-x-hidden">
