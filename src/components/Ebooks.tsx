@@ -20,18 +20,9 @@ export function Ebooks() {
               className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-white/70 bg-white/70 shadow-[0_10px_30px_rgba(63,86,54,0.12)] backdrop-blur transition duration-500 hover:-translate-y-3 hover:border-[#3f5636]/30 hover:shadow-[0_25px_50px_rgba(63,86,54,0.3)]"
             >
               <div className="relative aspect-square overflow-hidden bg-[#e3e9df]">
-                {ebook.image ? (
-                  <img
-                    src={ebook.image}
-                    alt={ebook.title}
-                    loading="lazy"
-                    className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
-                  />
-                ) : (
-                  <div className="grid h-full place-items-center font-display text-6xl text-[#3f5636]/40">
-                    {String(i + 1).padStart(2, '0')}
-                  </div>
-                )}
+                <div className="grid h-full place-items-center font-display text-6xl text-[#3f5636]/40">
+                  {String(i + 1).padStart(2, '0')}
+                </div>
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#3f5636]/60 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <span className="absolute right-4 top-4 rounded-full bg-[#3f5636] px-4 py-1.5 font-sans text-sm font-extrabold text-white shadow-lg transition-transform duration-500 group-hover:scale-110">
                   {ebook.price}

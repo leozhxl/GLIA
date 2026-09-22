@@ -22,7 +22,7 @@ export function KitFono() {
 
       <div className="bg-gradient-to-r from-[#f8f5f5] via-[#f3ecec] to-[#ece1e0] px-4 pb-14 pt-10 sm:px-8 sm:pb-20 sm:pt-14">
         <div className="mx-auto max-w-6xl">
-          <div className="grid items-start gap-12 lg:grid-cols-2">
+          <div className="max-w-2xl">
             <div className="font-display text-[#3f5636]">
               <div data-reveal="zoom">
                 <p className="text-2xl leading-none sm:text-3xl lg:text-4xl">
@@ -61,15 +61,6 @@ export function KitFono() {
               </div>
             </div>
 
-            <div>
-              <img
-                src="/kit-fono.jpg"
-                alt="Fonoaudióloga segurando os documentos editáveis do Fono na Prática"
-                width="912"
-                height="1146"
-                className="mx-auto w-full max-w-md rounded-[2rem] shadow-[0_20px_50px_rgba(63,86,54,0.2)]"
-              />
-            </div>
           </div>
 
           <div className="mt-14 grid items-center gap-10 lg:grid-cols-2">
@@ -102,14 +93,6 @@ export function KitFono() {
                 para <em className="font-bold">você!</em>
               </span>
             </p>
-            <img
-              src="/kit-fono-modelos.jpeg"
-              alt="Exemplos dos documentos do Fono na Prática em telas de celular"
-              width="531"
-              height="383"
-              loading="lazy"
-              className="mt-10 w-full rounded-3xl shadow-[0_10px_30px_rgba(63,86,54,0.2)]"
-            />
             <a
               href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-fono-na-pratica-8ncmh/F107708482E"
               target="_blank"
@@ -190,7 +173,7 @@ export function KitFono() {
       <Ebooks />
 
       <div className="bg-gradient-to-r from-[#f8f5f5] via-[#f3ecec] to-[#e6d9d6] px-4 py-14 sm:px-8 sm:py-20">
-        <div className="mx-auto grid max-w-6xl items-start gap-10 lg:grid-cols-2">
+        <div className="mx-auto max-w-3xl">
         <div className="text-[#3f5636]">
           <h2 data-reveal="zoom" className="font-display text-3xl sm:text-4xl">
             <em className="font-bold">Dúvidas</em> frequentes:
@@ -299,24 +282,6 @@ export function KitFono() {
           </a>
         </div>
 
-        <div className="space-y-10">
-          <img
-            src="/kit-fono-anamnese.png"
-            alt="Exemplo de anamnese do Fono na Prática em tablet e celular"
-            width="510"
-            height="560"
-            loading="lazy"
-            className="mx-auto w-full max-w-md"
-          />
-          <img
-            src="/kit-fono-tablets.png"
-            alt="Exemplos de avaliação, lista de exercícios e instruções do Fono na Prática em tablets"
-            width="656"
-            height="619"
-            loading="lazy"
-            className="mx-auto w-full max-w-md"
-          />
-        </div>
         </div>
       </div>
 
