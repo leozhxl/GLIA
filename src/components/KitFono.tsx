@@ -4,7 +4,6 @@ import {
   CalendarCheck,
   Stethoscope,
   Palette,
-  Gift,
   Check,
   ArrowRight,
   ArrowUpRight,
@@ -70,12 +69,6 @@ const PILARES: { icon: LucideIcon; title: string; body: string }[] = [
     title: 'Personalização profissional',
     body: 'Tudo editável para você inserir sua logomarca, identidade visual e os dados do seu consultório.',
   },
-];
-
-const BONUS = [
-  'Materiais de explicação para pacientes e familiares',
-  'Guia rápido para gravar conteúdos profissionais',
-  'Recursos essenciais para começar a atender',
 ];
 
 const JORNADA = [
@@ -447,32 +440,6 @@ export function KitFono() {
                 <p className="mt-2 text-sm leading-relaxed text-glia-600">{pilar.body}</p>
               </div>
             ))}
-
-            {/* Bônus */}
-            <div
-              data-reveal="zoom"
-              className="rounded-[2rem] bg-sun-400 p-8 text-coral-950 md:col-span-4"
-            >
-              <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-                <div className="flex items-center gap-4">
-                  <span className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-coral-950 text-sun-300">
-                    <Gift className="h-7 w-7" />
-                  </span>
-                  <div>
-                    <p className="text-xs font-bold uppercase tracking-widest">De presente</p>
-                    <p className="font-display text-2xl font-extrabold">Bônus exclusivos</p>
-                  </div>
-                </div>
-                <ul className="grid gap-2 md:grid-cols-3 md:gap-4">
-                  {BONUS.map((item) => (
-                    <li key={item} className="flex items-start gap-2 text-sm font-semibold">
-                      <Plus className="mt-0.5 h-4 w-4 shrink-0" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </div>
