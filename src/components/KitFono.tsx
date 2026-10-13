@@ -18,7 +18,7 @@ import { createWhatsAppLink } from '@/lib/constants';
 import { Ebooks } from './Ebooks';
 
 const HOTMART_LINK =
-  'https://hotmart.com/pt-br/marketplace/produtos/hagsxd-fono-na-pratica-8ncmh/F107708482E';
+  'https://go.hotmart.com/X107960222F?dp=1';
 
 const DORES = [
   'O que eu preciso organizar primeiro?',
