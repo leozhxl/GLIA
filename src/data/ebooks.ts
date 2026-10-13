@@ -14,12 +14,25 @@ export interface Ebook {
   image?: string;
   /** Links da página do produto, ex.: [{ label: 'Comprar agora', href: 'https://...' }]. */
   links?: EbookLink[];
+  /** Produto em destaque: aparece primeiro, com card maior e selo. */
+  featured?: boolean;
 }
 
 // Ao clicar em "Quero este e-book", abre a página do produto (#/ebook/<slug>).
 // Preencha `longDescription`, `price` e `links` de cada produto.
 // Sem `links`, a página mostra um botão que abre o WhatsApp da clínica.
 export const EBOOKS: Ebook[] = [
+  {
+    slug: 'fono-na-pratica',
+    title: 'Fono na Prática — Me formei, e agora?',
+    description: 'Mais de 80 materiais profissionais e administrativos editáveis no Canva.',
+    longDescription:
+      'FONO NA PRÁTICA — Me formei, e agora?\n\nCriei esse material para facilitar sua rotina, da organização dos atendimentos à gestão profissional, sem precisar criar tudo do zero!\n\nVocê encontra:\n📋 Modelos de anamneses, relatórios, pareceres e evoluções;\n📝 Planos terapêuticos, fichas e orientações para famílias;\n📊 Planilhas para organizar atendimentos, sessões, pagamentos e financeiro.\n\nAs artes são editáveis no Canva, para você personalizar com sua logo, suas cores e suas informações e deixar tudo com a sua identidade!\n\nÉ para quem está começando e também para quem já atende e quer mais praticidade e organização.',
+    price: 'R$ 79,90',
+    links: [{ label: 'Comprar agora', href: 'https://go.hotmart.com/X107960222F?dp=1' }],
+    image: '/ebook-fono-na-pratica.jpeg',
+    featured: true,
+  },
   {
     slug: 'afasia-pos-avc',
     title: 'Afasia na Prática: 50 Sessões de Fonoaudiologia para Reabilitação da Linguagem',
@@ -129,15 +142,6 @@ export const EBOOKS: Ebook[] = [
     price: 'R$ 29,90',
     links: [{ label: 'Comprar agora', href: 'https://go.hotmart.com/N106487452U' }],
     image: '/ebook-desfralde-consciente.jpeg',
-  },
-  {
-    slug: 'fono-na-pratica',
-    title: 'Fono na Prática — Me formei, e agora?',
-    description: 'Mais de 80 materiais profissionais e administrativos editáveis no Canva.',
-    longDescription:
-      'FONO NA PRÁTICA — Me formei, e agora?\n\nCriei esse material para facilitar sua rotina, da organização dos atendimentos à gestão profissional, sem precisar criar tudo do zero!\n\nVocê encontra:\n📋 Modelos de anamneses, relatórios, pareceres e evoluções;\n📝 Planos terapêuticos, fichas e orientações para famílias;\n📊 Planilhas para organizar atendimentos, sessões, pagamentos e financeiro.\n\nAs artes são editáveis no Canva, para você personalizar com sua logo, suas cores e suas informações e deixar tudo com a sua identidade!\n\nÉ para quem está começando e também para quem já atende e quer mais praticidade e organização.',
-    price: 'R$ 79,90',
-    links: [{ label: 'Comprar agora', href: 'https://go.hotmart.com/F107708482E' }],
   },
   // Próximo produto: copie este modelo, descomente e preencha.
   // {

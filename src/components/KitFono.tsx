@@ -170,66 +170,46 @@ function HotmartButton({
   );
 }
 
-/** Pilha ilustrativa de documentos do kit, montada só com CSS. */
+/**
+ * Prévias reais dos materiais do kit. Os arquivos em /kit-fono já são gerados
+ * reduzidos e borrados, para mostrar o formato sem entregar o conteúdo.
+ */
+const PREVIAS: { src: string; alt: string; pos: string }[] = [
+  { src: '/kit-fono/preview-2.jpg', alt: 'Ficha de rastreio de disfagia', pos: 'left-[0%] top-[0%] -rotate-[9deg]' },
+  { src: '/kit-fono/preview-6.jpg', alt: 'Planilha de fechamento mensal', pos: 'left-[31%] top-[-2%] rotate-[2deg]' },
+  { src: '/kit-fono/preview-3.jpg', alt: 'Avaliação do frênulo lingual', pos: 'left-[62%] top-[1%] rotate-[8deg]' },
+  { src: '/kit-fono/preview-7.jpg', alt: 'Checklist para abrir o consultório', pos: 'left-[-3%] top-[27%] rotate-[4deg]' },
+  { src: '/kit-fono/preview-5.jpg', alt: 'Solicitação de exame', pos: 'left-[64%] top-[26%] -rotate-[5deg]' },
+  { src: '/kit-fono/preview-1.jpg', alt: 'Tipologia das disfluências', pos: 'left-[1%] top-[53%] -rotate-[6deg]' },
+  { src: '/kit-fono/preview-4.jpg', alt: 'Escala FOIS', pos: 'left-[61%] top-[52%] rotate-[7deg]' },
+  { src: '/kit-fono/preview-9.jpg', alt: 'Certificados de alta', pos: 'left-[31%] top-[54%] rotate-[-2deg]' },
+  { src: '/kit-fono/preview-8.jpg', alt: 'Manual Fono na Prática', pos: 'left-[28%] top-[22%] w-[44%] -rotate-[1deg] z-10' },
+];
+
+/** Pilha de prévias borradas dos documentos do kit. */
 function DocStack() {
   return (
-    <div aria-hidden="true" className="relative mx-auto h-[22rem] w-full max-w-sm sm:h-[26rem]">
-      {/* Documento de fundo: fluxo de caixa */}
-      <div className="absolute left-0 top-8 w-56 -rotate-[8deg] rounded-2xl bg-white p-5 shadow-xl ring-1 ring-sand-200 sm:w-64">
-        <p className="text-[10px] font-bold uppercase tracking-widest text-coral-600">Fluxo de caixa</p>
-        <div className="mt-4 flex h-20 items-end gap-1.5">
-          {[40, 65, 50, 80, 60, 95, 75].map((h, i) => (
-            <div key={i} className="flex-1 rounded-t bg-coral-200" style={{ height: `${h}%` }} />
-          ))}
+    <div
+      className="relative mx-auto aspect-[24/26] w-full max-w-sm select-none"
+      onContextMenu={(e) => e.preventDefault()}
+    >
+      {PREVIAS.map(({ src, alt, pos }) => (
+        <div
+          key={src}
+          className={`absolute overflow-hidden rounded-2xl bg-white p-1.5 shadow-xl ring-1 ring-sand-200 ${pos.includes('w-[') ? '' : 'w-[38%]'} ${pos}`}
+        >
+          <img
+            src={src}
+            alt={`Prévia: ${alt}`}
+            loading="lazy"
+            draggable={false}
+            className="pointer-events-none aspect-[3/4] w-full rounded-xl object-cover object-top"
+          />
         </div>
-        <div className="mt-3 space-y-1.5">
-          <div className="h-1.5 w-full rounded bg-sand-200" />
-          <div className="h-1.5 w-2/3 rounded bg-sand-200" />
-        </div>
-      </div>
-
-      {/* Documento do meio: relatório */}
-      <div className="absolute right-0 top-0 w-52 rotate-[6deg] rounded-2xl bg-coral-900 p-5 text-white shadow-xl sm:w-60">
-        <p className="text-[10px] font-bold uppercase tracking-widest text-sun-300">Relatório</p>
-        <div className="mt-4 space-y-2">
-          {[100, 85, 92, 60, 78].map((w, i) => (
-            <div key={i} className="h-1.5 rounded bg-white/25" style={{ width: `${w}%` }} />
-          ))}
-        </div>
-        <div className="mt-5 flex items-center gap-2">
-          <div className="h-6 w-6 rounded-full bg-sun-400" />
-          <div className="h-1.5 w-20 rounded bg-white/25" />
-        </div>
-      </div>
-
-      {/* Documento da frente: anamnese */}
-      <div className="absolute bottom-0 left-1/2 w-64 -translate-x-1/2 rotate-[-1deg] rounded-2xl bg-white p-6 shadow-2xl ring-1 ring-sand-200 sm:w-72">
-        <div className="flex items-center justify-between">
-          <p className="text-[10px] font-bold uppercase tracking-widest text-coral-600">Anamnese</p>
-          <span className="rounded-full bg-sun-100 px-2 py-0.5 text-[9px] font-bold uppercase text-sun-800">
-            Sua logo
-          </span>
-        </div>
-        <div className="mt-4 space-y-3">
-          {['Nome', 'Queixa', 'Histórico'].map((label) => (
-            <div key={label}>
-              <p className="text-[10px] font-semibold text-glia-400">{label}</p>
-              <div className="mt-1 h-px w-full bg-sand-300" />
-            </div>
-          ))}
-        </div>
-        <div className="mt-4 flex gap-3">
-          {['Sim', 'Não'].map((opt) => (
-            <span key={opt} className="flex items-center gap-1.5 text-[10px] text-glia-500">
-              <span className="h-3 w-3 rounded-sm border border-coral-400" />
-              {opt}
-            </span>
-          ))}
-        </div>
-      </div>
+      ))}
 
       {/* Selo de preço */}
-      <div className="absolute -right-2 bottom-16 grid h-24 w-24 rotate-12 place-items-center rounded-full bg-sun-400 text-center text-coral-950 shadow-lg sm:right-0">
+      <div className="absolute -right-2 bottom-16 z-20 grid h-24 w-24 rotate-12 place-items-center rounded-full bg-sun-400 text-center text-coral-950 shadow-lg sm:right-0">
         <div>
           <p className="text-[10px] font-bold uppercase leading-none">Só</p>
           <p className="font-display text-xl font-extrabold leading-tight">R$79,90</p>

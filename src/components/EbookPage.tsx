@@ -37,7 +37,7 @@ export function EbookPage({ slug }: { slug: string }) {
               aria-hidden="true"
               className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-[#3f5636]/30 to-[#e3b8b8]/40 opacity-70 blur-2xl transition-opacity duration-500 group-hover:opacity-100"
             />
-            <div className="relative aspect-square overflow-hidden rounded-3xl bg-[#e3e9df] shadow-[0_20px_50px_rgba(63,86,54,0.25)] transition-transform duration-500 group-hover:-rotate-1 group-hover:scale-[1.02]">
+            <div className={`relative ${ebook.featured ? 'aspect-[2/3]' : 'aspect-square'} overflow-hidden rounded-3xl bg-[#e3e9df] shadow-[0_20px_50px_rgba(63,86,54,0.25)] transition-transform duration-500 group-hover:-rotate-1 group-hover:scale-[1.02]`}>
               {ebook.image ? (
                 <img
                   src={ebook.image}
